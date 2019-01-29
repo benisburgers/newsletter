@@ -23,7 +23,7 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <header class="side-padding">
+  <header>
     <div class="logo left">
       Binelli Group
     </div>
@@ -44,7 +44,7 @@
       </div>
     </section>
     <section class="introduction side-padding">
-      <p class="one strong">
+      <p class="one">
         Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister Patrick Küng höchstpersönlich die perfekte Kurventechnik.
       </p>
       <p class="two">
@@ -56,23 +56,17 @@
     </section>
     <section class="images side-padding">
       <div class="column motta">
-        <div class="image-container">
-          <img src="img/motta.jpg" alt="Motta Hütte">
-        </div>
+        <img src="img/motta.jpg" alt="Motta Hütte">
         <span class="strong">Motta Hütte</span>
         <span>Copyright: Lorem Ipsum</span>
       </div>
       <div class="column ski">
-        <div class="image-container">
-          <img src="img/skifahrer.jpg" alt="Motta Hütte">
-        </div>
+        <img src="img/skifahrer.jpg" alt="Motta Hütte">
         <span class="strong">Patrick Küng</span>
         <span>Copyright: Lorem Ipsum</span>
       </div>
       <div class="column hotel">
-        <div class="image-container last">
-          <img src="img/hotel.jpg" alt="Motta Hütte">
-        </div>
+        <img src="img/hotel.jpg" alt="Motta Hütte">
         <span class="strong">Sheraton 5* Hotel</span>
         <span>Copyright: Lorem Ipsum</span>
       </div>
@@ -113,32 +107,32 @@
         </div>
         <div class="interactive">
           <form id="myForm" action="#" method="post">
-            <div class="input">
+            <div class="input left">
               <label for="firstname">Vorname</label>
               <input type="text" name="firstname" id="firstname" value="<?php if (isset($userParams['vorname'])) { echo $userParams['vorname'];} ?>" tabindex="1">
             </div>
 
-            <div class="input">
+            <div class="input right">
               <label for="lastname">Name</label>
               <input type="text" name="lastname" id="lastname" value="<?php echo $lastname; ?>" tabindex="1">
             </div>
 
-            <div class="input">
+            <div class="input left">
               <label for="street">Strasse / Nr.</label>
               <input type="text" name="street" id="street" value="<?php if (isset($userParams['strasse'])) { echo $userParams['strasse'];} ?>" tabindex="1">
             </div>
 
-            <div class="input">
+            <div class="input right">
               <label for="zip">PLZ / Ort</label>
               <input type="text" name="zip" id="zip" value="<?php if (isset($userParams['ort'])) { echo $userParams['ort'];} ?>" tabindex="1">
             </div>
 
-            <div class="input">
+            <div class="input left">
               <label for="email">E-Mail</label>
               <input type="text" name="email" id="email" value="<?php if (isset($userParams['e-mail'])) { echo $userParams['e-mail'];} ?>" tabindex="1">
             </div>
 
-            <div class="input">
+            <div class="input right">
               <label for="phone">Telefonnummer</label>
               <input type="text" name="phone" id="phone" value="<?php if (isset($userParams['telefon'])) { echo $userParams['telefon'];} ?>" tabindex="1">
             </div>
@@ -170,7 +164,7 @@
       </div>
     </section>
   </div>
-  <footer class="side-padding">
+  <footer>
     <span>Lorem ipsum dolor sit amet</span>
   </footer>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

@@ -13,10 +13,18 @@ header {
   background-color: black;
   color: white;
   margin-bottom: 30px;
+  padding: 0 3.33%;
+  height: 77px;
+  align-items: center;
 }
 
 section {
   margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 130px;
+  }
 }
 
 .main-body {
@@ -24,20 +32,22 @@ section {
   max-width: 929px;
   margin: 0 auto;
 }
-
-.side-padding {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 @media (min-width: 768px) {
-  .side-padding {
+  .main-body {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-.padding-right {
-  padding-right: 18px;
+.side-padding {
+  padding-left: 3.33%;
+  padding-right: 3.33%;
+}
+@media (min-width: 768px) {
+  .side-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .start {
@@ -48,6 +58,7 @@ section {
 @media (min-width: 768px) {
   .start {
     flex-direction: row;
+    margin-bottom: 130px;
   }
 }
 .start .title {
@@ -56,11 +67,26 @@ section {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .start .title {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .start .title {
+    margin-right: 30px;
+  }
+}
 .start .title h1 {
   margin: 0 0 20px;
 }
 .start .title h2 {
   margin: 0 0 30px;
+}
+@media (min-width: 768px) {
+  .start .title h2 {
+    margin: 0;
+  }
 }
 .start .image-container {
   flex: 2;
@@ -83,10 +109,21 @@ section {
   margin: 0 0 30px;
   text-align: justify;
 }
-.introduction p:last-child {
-  margin: 0;
+@media (min-width: 768px) {
+  .introduction p {
+    margin: 0;
+    margin-right: 20px;
+  }
 }
-.introduction p.strong {
+@media (min-width: 992px) {
+  .introduction p {
+    margin-right: 30px;
+  }
+}
+.introduction p:last-child {
+  margin-right: 0;
+}
+.introduction p.one {
   font-weight: bold;
 }
 
@@ -94,8 +131,16 @@ section {
   display: flex;
   overflow: scroll;
 }
-.images .image-container {
-  margin: 0 20px 0 0;
+.images .column {
+  margin-right: 20px;
+}
+@media (min-width: 992px) {
+  .images .column {
+    margin-right: 30px;
+  }
+}
+.images .column:last-child {
+  margin-right: 0;
 }
 .images img {
   width: 100%;
@@ -124,6 +169,19 @@ section {
 .program .times .time {
   flex: 1;
 }
+@media (min-width: 768px) {
+  .program .times .time {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .program .times .time {
+    margin-right: 30px;
+  }
+}
+.program .times .time:last-child {
+  margin-right: 0;
+}
 .program .times h3 {
   margin: 30px 0 0;
 }
@@ -151,6 +209,17 @@ section {
   flex: 1;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .sign-up .info {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .sign-up .info {
+    margin-right: 30px;
+  }
+}
 .sign-up .info p {
   margin: 0 0 1em;
 }
@@ -174,7 +243,18 @@ section {
 }
 @media (min-width: 768px) {
   .sign-up .interactive form .input {
-    flex-basis: 50%;
+    flex-basis: calc(50% - (20px / 2));
+  }
+  .sign-up .interactive form .input.left {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .sign-up .interactive form .input {
+    flex-basis: calc(50% - (30px / 2));
+  }
+  .sign-up .interactive form .input.left {
+    margin-right: 30px;
   }
 }
 .sign-up .interactive form .input label {
@@ -215,8 +295,11 @@ section {
 }
 
 footer {
+  display: flex;
+  align-items: center;
   background-color: grey;
-  padding: 23px 15px 38px;
+  padding: 0 3.33%;
+  height: 77px;
 }
 
 /*# sourceMappingURL=newstyle.css.map */

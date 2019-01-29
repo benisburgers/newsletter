@@ -6,6 +6,12 @@ $medium-device:       768px;
 $large-device:        992px;
 // Extra large devices (large desktops, 1200px and up)
 $extra-large-device:  1200px;
+
+//Margin right to elements on medium to large devices
+$medium-margin-right: 20px;
+//Margin right to elements on large devices and up
+$large-margin-right:  30px;
+
 * {
   margin: 0;
   padding: 0;
@@ -19,43 +25,61 @@ header {
   background-color: black;
   color: white;
   margin-bottom: 30px;
+  padding: 0 3.33%;
+  height: 77px;
+  align-items: center;
 }
 section {
   margin-bottom: 80px;
+  @media(min-width: $medium-device) {
+    margin-bottom: 130px;
+  }
 }
 .main-body {
   overflow: hidden;
   max-width: 929px;
   margin: 0 auto;
-}
-.side-padding {
-  padding-left: 15px;
-  padding-right: 15px;
   @media(min-width: $medium-device) {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.padding-right {
-  padding-right: 18px;
+.side-padding {
+  padding-left: 3.33%;
+  padding-right: 3.33%;
+  @media(min-width: $medium-device) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
+
 .start {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
   @media(min-width: $medium-device) {
     flex-direction: row;
+    margin-bottom: 130px;
   }
   .title {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media(min-width: $medium-device) {
+      margin-right: $medium-margin-right;
+    }
+    @media(min-width: $large-device) {
+      margin-right: $large-margin-right;
+    }
     h1 {
       margin: 0 0 20px;
     }
     h2 {
       margin: 0 0 30px;
+      @media(min-width: $medium-device) {
+        margin: 0;
+      }
     }
   }
   .image-container {
@@ -75,10 +99,17 @@ section {
     flex: 1;
     margin: 0 0 30px;
     text-align: justify;
-    &:last-child {
+    @media(min-width: $medium-device) {
       margin: 0;
+      margin-right: $medium-margin-right;
     }
-    &.strong {
+    @media(min-width: $large-device) {
+      margin-right: $large-margin-right;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &.one {
       font-weight: bold;
     }
   }
@@ -86,8 +117,14 @@ section {
 .images {
   display: flex;
   overflow: scroll;
-  .image-container {
-    margin: 0 20px 0 0;
+  .column {
+    margin-right: $medium-margin-right;
+    @media(min-width: $large-device) {
+      margin-right: $large-margin-right;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
   img {
     width: 100%;
@@ -113,6 +150,15 @@ section {
     }
     .time {
       flex: 1;
+      @media(min-width: $medium-device) {
+        margin-right: $medium-margin-right;
+      }
+      @media(min-width: $large-device) {
+        margin-right: $large-margin-right;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
     }
     h3 {
       margin: 30px 0 0;
@@ -138,6 +184,13 @@ section {
   .info {
     flex: 1;
     margin-bottom: 30px;
+    @media(min-width: $medium-device) {
+      margin-right: $medium-margin-right;
+      margin-bottom: 0;
+    }
+    @media(min-width: $large-device) {
+      margin-right: $large-margin-right;
+    }
     p {
       margin: 0 0 1em;
       &.strong {
@@ -158,7 +211,16 @@ section {
         flex-basis: 100%;
         margin-bottom: 20px;
         @media(min-width: $medium-device) {
-          flex-basis: 50%;
+          flex-basis: calc(50% - (#{$medium-margin-right} / 2));
+          &.left {
+            margin-right: $medium-margin-right;
+          }
+        }
+        @media(min-width: $large-device) {
+          flex-basis: calc(50% - (#{$large-margin-right} / 2));
+          &.left {
+            margin-right: $large-margin-right;
+          }
         }
         label {
           display: inline-block;
@@ -200,6 +262,9 @@ section {
   justify-content: space-between;
 }
 footer {
+  display: flex;
+  align-items: center;
   background-color: grey;
-  padding: 23px 15px 38px;
+  padding: 0 3.33%;
+  height: 77px;
 }
