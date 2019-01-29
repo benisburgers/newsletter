@@ -138,13 +138,14 @@ header {
   flex: 1;
 }
 .sign-up .info p {
-  margin: 1em 0;
+  margin: 1em 0 0;
 }
 .sign-up .info p.strong {
   font-weight: bold;
 }
 .sign-up .interactive {
   flex: 2;
+  margin-top: 30px;
 }
 .sign-up .interactive form {
   display: flex;
@@ -153,6 +154,7 @@ header {
 }
 .sign-up .interactive form .input {
   flex-basis: 100%;
+  margin-top: 20px;
 }
 @media (min-width: 768px) {
   .sign-up .interactive form .input {
@@ -167,6 +169,7 @@ header {
 }
 .sign-up .interactive form .text-area {
   flex-basis: 100%;
+  margin-top: 20px;
 }
 .sign-up .interactive form .text-area textarea {
   border: 1px solid black;
@@ -176,15 +179,21 @@ header {
 }
 .sign-up .interactive form .terms {
   flex-basis: 100%;
+  margin-top: 31px;
 }
 .sign-up .interactive form .submit {
   flex-basis: 100%;
+  margin-top: 50px;
+}
+.sign-up .interactive form .submit input {
+  width: 100%;
+  border: 1px solid black;
 }
 
 .logos {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 68px;
+  margin: 80px 0 68px;
 }
 
 footer {
