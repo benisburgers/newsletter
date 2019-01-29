@@ -9,46 +9,102 @@ header {
   overflow: hidden;
 }
 
-.header img {
-  max-width: 100%;
-}
-
 .side-padding {
   padding-left: 15px;
   padding-right: 15px;
 }
 
+.header .title h1 {
+  margin: 20px 0;
+}
+.header .title p {
+  margin: 0 0 30px;
+}
+.header .image-container img {
+  max-width: 100%;
+  margin-bottom: 26px;
+}
+
+.introduction p {
+  margin: 0;
+}
+.introduction p.one {
+  margin-bottom: 5px;
+}
+.introduction p.two {
+  margin-bottom: 25px;
+}
+.introduction p.three {
+  margin-bottom: 80px;
+}
+
 .images {
   display: flex;
   overflow: scroll;
+  margin-bottom: 64px;
+}
+.images .image-container.last {
+  padding-right: 15px;
 }
 .images img {
   width: 231px;
+  margin-bottom: 9px;
 }
-
-.interactive form span {
+.images span {
   display: block;
 }
-.interactive form input {
+.images span.strong {
+  font-weight: bold;
+}
+
+.program h2 {
+  margin: 0 0 10px;
+}
+.program .times h3 {
+  margin: 30px 0 10px;
+}
+.program .times p {
+  margin: 0;
+}
+
+.sign-up h2 {
+  margin: 80px 0 30px;
+}
+.sign-up .info p {
+  margin: 1em 0;
+}
+.sign-up .info p.strong {
+  font-weight: bold;
+}
+.sign-up .interactive form span {
+  display: block;
+}
+.sign-up .interactive form input {
   border: 1px solid black;
   width: 100%;
 }
-.interactive form textarea {
+.sign-up .interactive form textarea {
   border: 1px solid black;
   width: 100%;
 }
-.interactive button {
+.sign-up .interactive .terms {
+  margin: 31px 0 50px;
+}
+.sign-up .interactive button {
   border: 1px solid black;
   width: 100%;
+  margin: 0 0 80px;
 }
 
 .logos {
   display: flex;
   justify-content: space-between;
+  margin: 0 0 68px;
 }
 
 footer {
   background-color: grey;
+  padding: 23px 15px 38px;
 }
 
 /*# sourceMappingURL=newstyle.css.map */
