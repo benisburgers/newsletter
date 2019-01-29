@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+
+.main-body {
+  overflow: hidden;
+}
+
+.header img {
+  max-width: 100%;
+}
+
+.side-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.images {
+  display: flex;
+  overflow: scroll;
+}
+.images img {
+  width: 231px;
+}
+
+.interactive form span {
+  display: block;
+}
+.interactive form input {
+  border: 1px solid black;
+  width: 100%;
+}
+.interactive form textarea {
+  border: 1px solid black;
+  width: 100%;
+}
+.interactive button {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: grey;
+}
+
+/*# sourceMappingURL=newstyle.css.map */

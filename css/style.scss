@@ -1,6 +1,9 @@
 * {
   margin: 0;
 }
+body {
+  width: 100vw;
+}
 header {
   width: 100%;
   background-color: black;
@@ -9,6 +12,7 @@ header {
   justify-content: space-between;
 }
 .main-body {
+  width: 100%;
   max-width: 929px;
   margin: 0 auto;
   .header {
