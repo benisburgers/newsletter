@@ -35,30 +35,24 @@
     <section class="start">
       <div class="title side-padding">
         <h1>Wettbewerb</h1>
-        <p>
+        <h2>
           EINZIGARTIGES SKIERLEBNIS FÜR 4x2 PERSONEN IM WERT VON ÜBER 10’000 FRANKEN
-        </p>
+        </h2>
       </div>
       <div class="image-container">
         <img src="img/patrick_kueng.jpg" alt="Patrick Kueng">
       </div>
     </section>
     <section class="introduction side-padding">
-      <div class="column one">
-        <p class="one strong">
-          Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister Patrick Küng höchstpersönlich die perfekte Kurventechnik.
-        </p>
-      </div>
-      <div class="column two">
-        <p class="two">
-          Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der Motta-Hütte. Unser Partnerbetrieb am Sonnenhang der Lenzerheid gehört zu den zehn besten Skihütten der Schweiz. Das Restaurant mit 14 Gault-Millau Punkten serviert Ihnen am 6. März ein exquisites Alpengourmet-Menu und verwöhnt Sie mit einer Degustation edler Weine.
-        </p>
-      </div>
-      <div class="column three">
-        <p class="three">
-          Ihren Abend im Winterwunderland verbringen Sie individuell, bevor Sie im 5*Hotel XY den erstklassigen Erlebnistag gemütlich abschliessen.
-        </p>
-      </div>
+      <p class="one strong">
+        Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister Patrick Küng höchstpersönlich die perfekte Kurventechnik.
+      </p>
+      <p class="two">
+        Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der Motta-Hütte. Unser Partnerbetrieb am Sonnenhang der Lenzerheid gehört zu den zehn besten Skihütten der Schweiz. Das Restaurant mit 14 Gault-Millau Punkten serviert Ihnen am 6. März ein exquisites Alpengourmet-Menu und verwöhnt Sie mit einer Degustation edler Weine.
+      </p>
+      <p class="three">
+        Ihren Abend im Winterwunderland verbringen Sie individuell, bevor Sie im 5*Hotel XY den erstklassigen Erlebnistag gemütlich abschliessen.
+      </p>
     </section>
     <section class="images side-padding">
       <div class="column motta">
@@ -101,8 +95,9 @@
         </div>
         <div class="time four">
           <h3>ab 17.00</h3>
-          <p>Freies Programm in der alpinen Oase Lenzerheide Valbella</p>
-          <p>Übernachtung im 5*Hotel XY</p>
+          <p>Freies Programm in der alpinen Oase Lenzerheide Valbella
+            <br/>
+          Übernachtung im 5*Hotel XY</p>
         </div>
       </div>
     </section>

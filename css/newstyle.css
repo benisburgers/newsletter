@@ -12,6 +12,11 @@ header {
   justify-content: space-between;
   background-color: black;
   color: white;
+  margin-bottom: 30px;
+}
+
+section {
+  margin-bottom: 80px;
 }
 
 .main-body {
@@ -24,10 +29,21 @@ header {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media (min-width: 768px) {
+  .side-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.padding-right {
+  padding-right: 18px;
+}
 
 .start {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .start {
@@ -41,9 +57,9 @@ header {
   justify-content: space-between;
 }
 .start .title h1 {
-  margin: 20px 0;
+  margin: 0 0 20px;
 }
-.start .title p {
+.start .title h2 {
   margin: 0 0 30px;
 }
 .start .image-container {
@@ -51,7 +67,6 @@ header {
 }
 .start .image-container img {
   max-width: 100%;
-  margin-bottom: 26px;
 }
 
 .introduction {
@@ -63,31 +78,29 @@ header {
     flex-direction: row;
   }
 }
-.introduction .column {
-  flex: 1;
-}
 .introduction p {
+  flex: 1;
+  margin: 0 0 30px;
+  text-align: justify;
+}
+.introduction p:last-child {
   margin: 0;
 }
-.introduction p.one {
-  margin-bottom: 5px;
-}
-.introduction p.two {
-  margin-bottom: 25px;
-}
-.introduction p.three {
-  margin-bottom: 80px;
+.introduction p.strong {
+  font-weight: bold;
 }
 
 .images {
   display: flex;
   overflow: scroll;
-  margin-bottom: 64px;
+}
+.images .image-container {
+  margin: 0 20px 0 0;
 }
 .images img {
   width: 100%;
-  min-width: 231px;
-  margin-bottom: 9px;
+  min-width: 253px;
+  margin-bottom: 10px;
 }
 .images span {
   display: block;
@@ -112,10 +125,10 @@ header {
   flex: 1;
 }
 .program .times h3 {
-  margin: 30px 0 10px;
+  margin: 30px 0 0;
 }
 .program .times p {
-  margin: 0;
+  margin: 10px 0 0;
 }
 
 .sign-up {
@@ -123,7 +136,7 @@ header {
   flex-direction: column;
 }
 .sign-up h2 {
-  margin: 80px 0 30px;
+  margin: 0px 0 30px;
 }
 .sign-up .body {
   display: flex;
@@ -136,16 +149,19 @@ header {
 }
 .sign-up .info {
   flex: 1;
+  margin-bottom: 30px;
 }
 .sign-up .info p {
-  margin: 1em 0 0;
+  margin: 0 0 1em;
 }
 .sign-up .info p.strong {
   font-weight: bold;
 }
+.sign-up .info p:last-child {
+  margin: 0;
+}
 .sign-up .interactive {
   flex: 2;
-  margin-top: 30px;
 }
 .sign-up .interactive form {
   display: flex;
@@ -154,12 +170,16 @@ header {
 }
 .sign-up .interactive form .input {
   flex-basis: 100%;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .sign-up .interactive form .input {
     flex-basis: 50%;
   }
+}
+.sign-up .interactive form .input label {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 .sign-up .interactive form .input input {
   border: 1px solid black;
@@ -169,7 +189,7 @@ header {
 }
 .sign-up .interactive form .text-area {
   flex-basis: 100%;
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .sign-up .interactive form .text-area textarea {
   border: 1px solid black;
@@ -179,11 +199,10 @@ header {
 }
 .sign-up .interactive form .terms {
   flex-basis: 100%;
-  margin-top: 31px;
+  margin-bottom: 50px;
 }
 .sign-up .interactive form .submit {
   flex-basis: 100%;
-  margin-top: 50px;
 }
 .sign-up .interactive form .submit input {
   width: 100%;
@@ -193,7 +212,6 @@ header {
 .logos {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0 68px;
 }
 
 footer {

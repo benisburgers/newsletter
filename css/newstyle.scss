@@ -18,6 +18,10 @@ header {
   justify-content: space-between;
   background-color: black;
   color: white;
+  margin-bottom: 30px;
+}
+section {
+  margin-bottom: 80px;
 }
 .main-body {
   overflow: hidden;
@@ -27,10 +31,18 @@ header {
 .side-padding {
   padding-left: 15px;
   padding-right: 15px;
+  @media(min-width: $medium-device) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.padding-right {
+  padding-right: 18px;
 }
 .start {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
   @media(min-width: $medium-device) {
     flex-direction: row;
   }
@@ -40,9 +52,9 @@ header {
     flex-direction: column;
     justify-content: space-between;
     h1 {
-      margin: 20px 0;
+      margin: 0 0 20px;
     }
-    p {
+    h2 {
       margin: 0 0 30px;
     }
   }
@@ -50,7 +62,6 @@ header {
     flex: 2;
     img {
       max-width: 100%;
-      margin-bottom: 26px;
     }
   }
 }
@@ -60,30 +71,28 @@ header {
   @media(min-width: $medium-device) {
     flex-direction: row;
   }
-  .column {
-    flex: 1;
-  }
   p {
-    margin: 0;
-    &.one {
-      margin-bottom: 5px;
+    flex: 1;
+    margin: 0 0 30px;
+    text-align: justify;
+    &:last-child {
+      margin: 0;
     }
-    &.two {
-      margin-bottom: 25px;
-    }
-    &.three {
-      margin-bottom: 80px;
+    &.strong {
+      font-weight: bold;
     }
   }
 }
 .images {
   display: flex;
   overflow: scroll;
-  margin-bottom: 64px;
+  .image-container {
+    margin: 0 20px 0 0;
+  }
   img {
     width: 100%;
-    min-width: 231px;
-    margin-bottom: 9px;
+    min-width: 253px;
+    margin-bottom: 10px;
   }
   span {
     display: block;
@@ -106,10 +115,10 @@ header {
       flex: 1;
     }
     h3 {
-      margin: 30px 0 10px;
+      margin: 30px 0 0;
     }
     p {
-      margin: 0;
+      margin: 10px 0 0;
     }
   }
 }
@@ -117,7 +126,7 @@ header {
   display: flex;
   flex-direction: column;
   h2 {
-    margin: 80px 0 30px;
+    margin: 0px 0 30px;
   }
   .body {
     display: flex;
@@ -128,25 +137,32 @@ header {
   }
   .info {
     flex: 1;
+    margin-bottom: 30px;
     p {
-      margin: 1em 0 0;
+      margin: 0 0 1em;
       &.strong {
         font-weight: bold;
+      }
+      &:last-child {
+        margin: 0;
       }
     }
   }
   .interactive {
     flex: 2;
-    margin-top: 30px;
     form {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       .input {
         flex-basis: 100%;
-        margin-top: 20px;
+        margin-bottom: 20px;
         @media(min-width: $medium-device) {
           flex-basis: 50%;
+        }
+        label {
+          display: inline-block;
+          margin-bottom: 10px;
         }
         input {
           border: 1px solid black;
@@ -157,7 +173,7 @@ header {
       }
       .text-area {
         flex-basis: 100%;
-        margin-top: 20px;
+        margin-bottom: 30px;
         textarea {
           border: 1px solid black;
           width: 100%;
@@ -167,11 +183,10 @@ header {
       }
       .terms {
         flex-basis: 100%;
-        margin-top: 31px;
+        margin-bottom: 50px;
       }
       .submit {
         flex-basis: 100%;
-        margin-top: 50px;
         input {
           width: 100%;
           border: 1px solid black;
@@ -183,7 +198,6 @@ header {
 .logos {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0 68px;
 }
 footer {
   background-color: grey;
