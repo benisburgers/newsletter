@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -7,6 +16,8 @@ header {
 
 .main-body {
   overflow: hidden;
+  max-width: 929px;
+  margin: 0 auto;
 }
 
 .side-padding {
@@ -14,17 +25,47 @@ header {
   padding-right: 15px;
 }
 
-.header .title h1 {
+.start {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .start {
+    flex-direction: row;
+  }
+}
+.start .title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.start .title h1 {
   margin: 20px 0;
 }
-.header .title p {
+.start .title p {
   margin: 0 0 30px;
 }
-.header .image-container img {
+.start .image-container {
+  flex: 2;
+}
+.start .image-container img {
   max-width: 100%;
   margin-bottom: 26px;
 }
 
+.introduction {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .introduction {
+    flex-direction: row;
+  }
+}
+.introduction .column {
+  flex: 1;
+}
 .introduction p {
   margin: 0;
 }
@@ -43,11 +84,9 @@ header {
   overflow: scroll;
   margin-bottom: 64px;
 }
-.images .image-container.last {
-  padding-right: 15px;
-}
 .images img {
-  width: 231px;
+  width: 100%;
+  min-width: 231px;
   margin-bottom: 9px;
 }
 .images span {
@@ -60,6 +99,18 @@ header {
 .program h2 {
   margin: 0 0 10px;
 }
+.program .times {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .program .times {
+    flex-direction: row;
+  }
+}
+.program .times .time {
+  flex: 1;
+}
 .program .times h3 {
   margin: 30px 0 10px;
 }
@@ -67,8 +118,24 @@ header {
   margin: 0;
 }
 
+.sign-up {
+  display: flex;
+  flex-direction: column;
+}
 .sign-up h2 {
   margin: 80px 0 30px;
+}
+.sign-up .body {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .sign-up .body {
+    flex-direction: row;
+  }
+}
+.sign-up .info {
+  flex: 1;
 }
 .sign-up .info p {
   margin: 1em 0;
@@ -76,24 +143,42 @@ header {
 .sign-up .info p.strong {
   font-weight: bold;
 }
-.sign-up .interactive form span {
+.sign-up .interactive {
+  flex: 2;
+}
+.sign-up .interactive form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sign-up .interactive form .input {
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  .sign-up .interactive form .input {
+    flex-basis: 50%;
+  }
+}
+.sign-up .interactive form .input input {
+  border: 1px solid black;
+  width: 100%;
+  box-sizing: border-box;
   display: block;
 }
-.sign-up .interactive form input {
+.sign-up .interactive form .text-area {
+  flex-basis: 100%;
+}
+.sign-up .interactive form .text-area textarea {
   border: 1px solid black;
   width: 100%;
+  box-sizing: border-box;
+  display: block;
 }
-.sign-up .interactive form textarea {
-  border: 1px solid black;
-  width: 100%;
+.sign-up .interactive form .terms {
+  flex-basis: 100%;
 }
-.sign-up .interactive .terms {
-  margin: 31px 0 50px;
-}
-.sign-up .interactive button {
-  border: 1px solid black;
-  width: 100%;
-  margin: 0 0 80px;
+.sign-up .interactive form .submit {
+  flex-basis: 100%;
 }
 
 .logos {

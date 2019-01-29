@@ -1,3 +1,18 @@
+// Small devices (landscape phones, 576px and up)
+$small-device:        576px;
+// Medium devices (tablets, 768px and up)
+$medium-device:       768px;
+// Large devices (desktops, 992px and up)
+$large-device:        992px;
+// Extra large devices (large desktops, 1200px and up)
+$extra-large-device:  1200px;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -6,13 +21,24 @@ header {
 }
 .main-body {
   overflow: hidden;
+  max-width: 929px;
+  margin: 0 auto;
 }
 .side-padding {
   padding-left: 15px;
   padding-right: 15px;
 }
-.header {
+.start {
+  display: flex;
+  flex-direction: column;
+  @media(min-width: $medium-device) {
+    flex-direction: row;
+  }
   .title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     h1 {
       margin: 20px 0;
     }
@@ -21,6 +47,7 @@ header {
     }
   }
   .image-container {
+    flex: 2;
     img {
       max-width: 100%;
       margin-bottom: 26px;
@@ -28,6 +55,14 @@ header {
   }
 }
 .introduction {
+  display: flex;
+  flex-direction: column;
+  @media(min-width: $medium-device) {
+    flex-direction: row;
+  }
+  .column {
+    flex: 1;
+  }
   p {
     margin: 0;
     &.one {
@@ -45,11 +80,9 @@ header {
   display: flex;
   overflow: scroll;
   margin-bottom: 64px;
-  .image-container.last {
-    padding-right: 15px; 
-  }
   img {
-    width: 231px;
+    width: 100%;
+    min-width: 231px;
     margin-bottom: 9px;
   }
   span {
@@ -64,6 +97,14 @@ header {
     margin: 0 0 10px;
   }
   .times {
+    display: flex;
+    flex-direction: column;
+    @media(min-width: $medium-device) {
+      flex-direction: row;
+    }
+    .time {
+      flex: 1;
+    }
     h3 {
       margin: 30px 0 10px;
     }
@@ -73,10 +114,20 @@ header {
   }
 }
 .sign-up {
+  display: flex;
+  flex-direction: column;
   h2 {
     margin: 80px 0 30px;
   }
+  .body {
+    display: flex;
+    flex-direction: column;
+    @media(min-width: $medium-device) {
+      flex-direction: row;
+    }
+  }
   .info {
+    flex: 1;
     p {
       margin: 1em 0;
       &.strong {
@@ -85,26 +136,38 @@ header {
     }
   }
   .interactive {
+    flex: 2;
     form {
-      span {
-        display: block;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .input {
+        flex-basis: 100%;
+        @media(min-width: $medium-device) {
+          flex-basis: 50%;
+        }
+        input {
+          border: 1px solid black;
+          width: 100%;
+          box-sizing: border-box;
+          display: block;
+        }
       }
-      input {
-        border: 1px solid black;
-        width: 100%;
+      .text-area {
+        flex-basis: 100%;
+        textarea {
+          border: 1px solid black;
+          width: 100%;
+          box-sizing: border-box;
+          display: block;
+        }
       }
-      textarea {
-        border: 1px solid black;
-        width: 100%;
+      .terms {
+        flex-basis: 100%;
       }
-    }
-    .terms {
-      margin: 31px 0 50px;
-    }
-    button {
-      border: 1px solid black;
-      width: 100%;
-      margin: 0 0 80px;
+      .submit {
+        flex-basis: 100%;
+      }
     }
   }
 }

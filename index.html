@@ -32,7 +32,7 @@
     </div>
   </header>
   <div class="main-body">
-    <section class="header">
+    <section class="start">
       <div class="title side-padding">
         <h1>Wettbewerb</h1>
         <p>
@@ -45,10 +45,8 @@
     </section>
     <section class="introduction side-padding">
       <div class="column one">
-        <p class="one">
-          <strong>
-            Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister Patrick Küng höchstpersönlich die perfekte Kurventechnik.
-          </strong>
+        <p class="one strong">
+          Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister Patrick Küng höchstpersönlich die perfekte Kurventechnik.
         </p>
       </div>
       <div class="column two">
@@ -119,17 +117,49 @@
           <p class="strong">Ihre Binelli Group Zürich</p>
         </div>
         <div class="interactive">
-          
-          <div class="terms">
-            <input type="checkbox" name="conditions" value="agree" id="conditions-checkbox">
-            <label for="conditions-checkbox">
-              <img src="img/checkbox_check.svg" alt="checkbox" class="visible-checkbox">
-              <span>Ich bin mit den <a href="#">Teilnahmebedingungen</a> einverstanden</span>
-            </label>
-          </div>
-          <div class="submit-button">
-            <button type="button" name="button">Jetzt Mitmachen</button>
-          </div>
+          <form id="myForm" action="#" method="post">
+            <div class="input">
+              <label for="firstname">Vorname</label>
+              <input type="text" name="firstname" id="firstname" value="<?php if (isset($userParams['vorname'])) { echo $userParams['vorname'];} ?>" tabindex="1">
+            </div>
+
+            <div class="input">
+              <label for="lastname">Name</label>
+              <input type="text" name="lastname" id="lastname" value="<?php echo $lastname; ?>" tabindex="1">
+            </div>
+
+            <div class="input">
+              <label for="street">Strasse / Nr.</label>
+              <input type="text" name="street" id="street" value="<?php if (isset($userParams['strasse'])) { echo $userParams['strasse'];} ?>" tabindex="1">
+            </div>
+
+            <div class="input">
+              <label for="zip">PLZ / Ort</label>
+              <input type="text" name="zip" id="zip" value="<?php if (isset($userParams['ort'])) { echo $userParams['ort'];} ?>" tabindex="1">
+            </div>
+
+            <div class="input">
+              <label for="email">E-Mail</label>
+              <input type="text" name="email" id="email" value="<?php if (isset($userParams['e-mail'])) { echo $userParams['e-mail'];} ?>" tabindex="1">
+            </div>
+
+            <div class="input">
+              <label for="phone">Telefonnummer</label>
+              <input type="text" name="phone" id="phone" value="<?php if (isset($userParams['telefon'])) { echo $userParams['telefon'];} ?>" tabindex="1">
+            </div>
+
+            <div class="text-area">
+              <label for="textarea">Bemerkungsfeld</label>
+              <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+            </div>
+            <div class="terms">
+              <input type="checkbox" name="checkbox" id="checkbox">
+              <label for="checkbox">Ich bin mit den Teilnahmebedingungen einverstanden</label>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Submit" id="ajaxButton">
+            </div>
+          </form>
         </div>
       </div>
     </section>
