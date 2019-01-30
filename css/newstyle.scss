@@ -69,6 +69,11 @@ a {
   color: #1C69D4;
   text-decoration: none;
 }
+input,textarea {
+  border: 1px solid #E3E3E3;
+  border-radius: 3px;
+  background-color: #FCFCFC;
+}
 @media(min-width: $large-device) {
   p {
     font-size: 18px;
@@ -254,7 +259,7 @@ a {
       .input {
         flex-basis: 100%;
         margin-bottom: 20px;
-        @media(min-width: $medium-device) {
+        @media(min-width: $small-device) {
           flex-basis: calc(50% - (#{$medium-margin-right} / 2));
           &.left {
             margin-right: $medium-margin-right;
@@ -272,7 +277,6 @@ a {
           color: #ABABAB;
         }
         input {
-          border: 1px solid black;
           width: 100%;
           box-sizing: border-box;
           display: block;
@@ -285,10 +289,10 @@ a {
           color: #ABABAB;
         }
         textarea {
-          border: 1px solid black;
           width: 100%;
           box-sizing: border-box;
           display: block;
+          resize: none;
         }
       }
       .terms {
@@ -306,29 +310,34 @@ a {
           width: 20px;
           border: 1px solid #E3E3E3;
           border-radius: 3px;
+          background-color: #FCFCFC;
         }
         #checkbox-invisible {
           display: none;
           &:checked {
             ~label {
               #checkbox-visible {
-                background-color: red;
+                background-color: #1C69D4;
+                border: 1px solid #1C69D4;
               }
             }
           }
-        }
-        #checkbox-visible {
-          border: 1px solid black;
         }
       }
       .submit {
         flex-basis: 100%;
         input {
           width: 100%;
-          border: 1px solid black;
           font-size: 16px;
           font-weight: bold;
           color: #FFFFFF;
+          background-color: #1C69D4;
+          border-radius: 3px;
+          border: none;
+          padding: 13px 0;
+          @media(min-width: $medium-device) {
+            width: 221px
+          }
           @media(min-width: $large-device) {
             font-size: 18px;
           }
@@ -340,11 +349,14 @@ a {
 .logos {
   display: flex;
   justify-content: space-between;
+  @media(min-width: $medium-device) {
+    justify-content: space-around;
+  }
 }
 footer {
   display: flex;
   align-items: center;
-  background-color: grey;
   padding: 0 3.33%;
   height: 77px;
+  background-color: #D8D8D8
 }

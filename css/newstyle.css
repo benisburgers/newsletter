@@ -66,6 +66,12 @@ a {
   text-decoration: none;
 }
 
+input, textarea {
+  border: 1px solid #E3E3E3;
+  border-radius: 3px;
+  background-color: #FCFCFC;
+}
+
 @media (min-width: 992px) {
   p {
     font-size: 18px;
@@ -295,7 +301,7 @@ a {
   flex-basis: 100%;
   margin-bottom: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .sign-up .interactive form .input {
     flex-basis: calc(50% - (20px / 2));
   }
@@ -317,7 +323,6 @@ a {
   color: #ABABAB;
 }
 .sign-up .interactive form .input input {
-  border: 1px solid black;
   width: 100%;
   box-sizing: border-box;
   display: block;
@@ -330,10 +335,10 @@ a {
   color: #ABABAB;
 }
 .sign-up .interactive form .text-area textarea {
-  border: 1px solid black;
   width: 100%;
   box-sizing: border-box;
   display: block;
+  resize: none;
 }
 .sign-up .interactive form .terms {
   flex-basis: 100%;
@@ -353,25 +358,32 @@ a {
   width: 20px;
   border: 1px solid #E3E3E3;
   border-radius: 3px;
+  background-color: #FCFCFC;
 }
 .sign-up .interactive form .terms #checkbox-invisible {
   display: none;
 }
 .sign-up .interactive form .terms #checkbox-invisible:checked ~ label #checkbox-visible {
-  background-color: red;
-}
-.sign-up .interactive form .terms #checkbox-visible {
-  border: 1px solid black;
+  background-color: #1C69D4;
+  border: 1px solid #1C69D4;
 }
 .sign-up .interactive form .submit {
   flex-basis: 100%;
 }
 .sign-up .interactive form .submit input {
   width: 100%;
-  border: 1px solid black;
   font-size: 16px;
   font-weight: bold;
   color: #FFFFFF;
+  background-color: #1C69D4;
+  border-radius: 3px;
+  border: none;
+  padding: 13px 0;
+}
+@media (min-width: 768px) {
+  .sign-up .interactive form .submit input {
+    width: 221px;
+  }
 }
 @media (min-width: 992px) {
   .sign-up .interactive form .submit input {
@@ -383,13 +395,18 @@ a {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .logos {
+    justify-content: space-around;
+  }
+}
 
 footer {
   display: flex;
   align-items: center;
-  background-color: grey;
   padding: 0 3.33%;
   height: 77px;
+  background-color: #D8D8D8;
 }
 
 /*# sourceMappingURL=newstyle.css.map */

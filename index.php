@@ -48,9 +48,10 @@
         Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister <a href="#">Patrick Küng</a> höchstpersönlich die perfekte Kurventechnik.
       </p>
       <p>
-        Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der <a href="#">Motta-Hütte</a>. Unser Partnerbetrieb am Sonnenhang der Lenzerheid gehört zu den zehn besten Skihütten der Schweiz. Das Restaurant mit 14 Gault-Millau Punkten serviert Ihnen am 6. März ein exquisites Alpengourmet-Menu und verwöhnt Sie mit einer Degustation edler Weine.
+        Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der <a href="#">Motta-Hütte</a>. Unser Partnerbetrieb am Sonnenhang der Lenzerheid gehört zu den zehn besten Skihütten der Schweiz.
       </p>
       <p>
+        Das Restaurant mit 14 Gault-Millau Punkten serviert Ihnen am 6. März ein exquisites Alpengourmet-Menu und verwöhnt Sie mit einer Degustation edler Weine.
         Ihren Abend im Winterwunderland verbringen Sie individuell, bevor Sie im <a href="#">5*Hotel XY</a> den erstklassigen Erlebnistag gemütlich abschliessen.
       </p>
     </section>
@@ -150,7 +151,7 @@
               </label>
             </div>
             <div class="submit">
-              <input type="submit" value="Submit" id="ajaxButton">
+              <input type="submit" value="Jetzt Mitmachen" id="ajaxButton"/>
             </div>
           </form>
         </div>
