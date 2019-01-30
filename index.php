@@ -35,22 +35,22 @@
     <section class="start">
       <div class="title side-padding">
         <h1>Wettbewerb</h1>
-        <h2>
+        <p class="intro-header">
           EINZIGARTIGES SKIERLEBNIS FÜR 4x2 PERSONEN IM WERT VON ÜBER 10’000 FRANKEN
-        </h2>
+        </p>
       </div>
       <div class="image-container">
         <img src="img/patrick_kueng.jpg" alt="Patrick Kueng">
       </div>
     </section>
     <section class="introduction side-padding">
-      <p class="one">
+      <p class="strong">
         Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister Patrick Küng höchstpersönlich die perfekte Kurventechnik.
       </p>
-      <p class="two">
+      <p>
         Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der Motta-Hütte. Unser Partnerbetrieb am Sonnenhang der Lenzerheid gehört zu den zehn besten Skihütten der Schweiz. Das Restaurant mit 14 Gault-Millau Punkten serviert Ihnen am 6. März ein exquisites Alpengourmet-Menu und verwöhnt Sie mit einer Degustation edler Weine.
       </p>
-      <p class="three">
+      <p>
         Ihren Abend im Winterwunderland verbringen Sie individuell, bevor Sie im 5*Hotel XY den erstklassigen Erlebnistag gemütlich abschliessen.
       </p>
     </section>
@@ -73,7 +73,7 @@
     </section>
     <section class="program side-padding">
       <h2>Programm</h2>
-      <span>Mittwoch, 6. März 2019</span>
+      <p class="strong">Mittwoch, 6. März 2019</p>
       <div class="times">
         <div class="time one">
           <h3>9.00</h3>
@@ -108,12 +108,12 @@
         <div class="interactive">
           <form id="myForm" action="#" method="post">
             <div class="input left">
-              <label for="firstname">Vorname</label>
+              <label for="firstname">Vorname*</label>
               <input type="text" name="firstname" id="firstname" value="<?php if (isset($userParams['vorname'])) { echo $userParams['vorname'];} ?>" tabindex="1">
             </div>
 
             <div class="input right">
-              <label for="lastname">Name</label>
+              <label for="lastname">Name*</label>
               <input type="text" name="lastname" id="lastname" value="<?php echo $lastname; ?>" tabindex="1">
             </div>
 
@@ -128,12 +128,12 @@
             </div>
 
             <div class="input left">
-              <label for="email">E-Mail</label>
+              <label for="email">E-Mail*</label>
               <input type="text" name="email" id="email" value="<?php if (isset($userParams['e-mail'])) { echo $userParams['e-mail'];} ?>" tabindex="1">
             </div>
 
             <div class="input right">
-              <label for="phone">Telefonnummer</label>
+              <label for="phone">Telefonnummer*</label>
               <input type="text" name="phone" id="phone" value="<?php if (isset($userParams['telefon'])) { echo $userParams['telefon'];} ?>" tabindex="1">
             </div>
 

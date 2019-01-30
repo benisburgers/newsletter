@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "BMW Type Global Pro";
+  src: url("../fonts/bmwtypewebli_all.ttf");
+}
+@font-face {
+  font-family: "BMW Type Global Pro";
+  src: url("../fonts/bmwtypewebbo_all.ttf");
+  font-weight: bold;
+}
 // Small devices (landscape phones, 576px and up)
 $small-device:        576px;
 // Medium devices (tablets, 768px and up)
@@ -18,7 +27,10 @@ $large-margin-right:  30px;
 }
 body {
   width: 100%;
+  font-family: "BMW Type Global Pro";
+  color: #000000;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -34,6 +46,38 @@ section {
   @media(min-width: $medium-device) {
     margin-bottom: 130px;
   }
+}
+p {
+  font-size: 16px;
+}
+h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+label, span {
+  font-size: 13px;
+}
+@media(min-width: $large-device) {
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+}
+.strong {
+  font-weight: bold;
 }
 .main-body {
   overflow: hidden;
@@ -75,10 +119,15 @@ section {
     h1 {
       margin: 0 0 20px;
     }
-    h2 {
+    .intro-header {
       margin: 0 0 30px;
+      font-size: 21px;
+      font-weight: bold;
       @media(min-width: $medium-device) {
         margin: 0;
+      }
+      @media(min-width: $large-device) {
+        font-size: 34px;
       }
     }
   }
@@ -107,10 +156,7 @@ section {
       margin-right: $large-margin-right;
     }
     &:last-child {
-      margin-right: 0;
-    }
-    &.one {
-      font-weight: bold;
+      margin: 0;
     }
   }
 }
@@ -133,9 +179,6 @@ section {
   }
   span {
     display: block;
-    &.strong {
-      font-weight: bold;
-    }
   }
 }
 .program {
@@ -193,9 +236,6 @@ section {
     }
     p {
       margin: 0 0 1em;
-      &.strong {
-        font-weight: bold;
-      }
       &:last-child {
         margin: 0;
       }
@@ -225,6 +265,7 @@ section {
         label {
           display: inline-block;
           margin-bottom: 10px;
+          color: #ABABAB;
         }
         input {
           border: 1px solid black;
@@ -236,6 +277,9 @@ section {
       .text-area {
         flex-basis: 100%;
         margin-bottom: 30px;
+        label {
+          color: #ABABAB;
+        }
         textarea {
           border: 1px solid black;
           width: 100%;
@@ -275,6 +319,12 @@ section {
         input {
           width: 100%;
           border: 1px solid black;
+          font-size: 16px;
+          font-weight: bold;
+          color: #FFFFFF;
+          @media(min-width: $large-device) {
+            font-size: 18px;
+          }
         }
       }
     }
