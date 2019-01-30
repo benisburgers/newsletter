@@ -271,6 +271,27 @@ input,textarea {
             margin-right: $large-margin-right;
           }
         }
+        &.location {
+          .zip {
+            margin-bottom: 20px;
+          }
+          @media(min-width: $small-device) {
+            display: flex;
+            .zip {
+              flex: 1;
+              margin-bottom: 0;
+              margin-right: $medium-margin-right;
+            }
+            .place {
+              flex: 3;
+            }
+          }
+          @media(min-width: $large-device) {
+            .zip {
+              margin-right: $large-margin-right;
+            }
+          }
+        }
         label {
           display: inline-block;
           margin-bottom: 10px;
@@ -280,6 +301,9 @@ input,textarea {
           width: 100%;
           box-sizing: border-box;
           display: block;
+          &.invalid {
+            border: 1px solid #1C69D4;
+          }
         }
       }
       .text-area {
@@ -308,7 +332,7 @@ input,textarea {
         #checkbox-visible {
           margin-right: 10px;
           width: 20px;
-          border: 1px solid #E3E3E3;
+          border: 1px solid #1C69D4;
           border-radius: 3px;
           background-color: #FCFCFC;
         }
@@ -331,7 +355,7 @@ input,textarea {
           font-size: 16px;
           font-weight: bold;
           color: #FFFFFF;
-          background-color: #1C69D4;
+          background-color: #D8D8D8;
           border-radius: 3px;
           border: none;
           padding: 13px 0;
@@ -340,6 +364,9 @@ input,textarea {
           }
           @media(min-width: $large-device) {
             font-size: 18px;
+          }
+          &.activated {
+            background-color: #1C69D4;
           }
         }
       }

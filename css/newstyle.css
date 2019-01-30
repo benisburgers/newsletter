@@ -317,6 +317,27 @@ input, textarea {
     margin-right: 30px;
   }
 }
+.sign-up .interactive form .input.location .zip {
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .sign-up .interactive form .input.location {
+    display: flex;
+  }
+  .sign-up .interactive form .input.location .zip {
+    flex: 1;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .sign-up .interactive form .input.location .place {
+    flex: 3;
+  }
+}
+@media (min-width: 992px) {
+  .sign-up .interactive form .input.location .zip {
+    margin-right: 30px;
+  }
+}
 .sign-up .interactive form .input label {
   display: inline-block;
   margin-bottom: 10px;
@@ -326,6 +347,9 @@ input, textarea {
   width: 100%;
   box-sizing: border-box;
   display: block;
+}
+.sign-up .interactive form .input input.invalid {
+  border: 1px solid #1C69D4;
 }
 .sign-up .interactive form .text-area {
   flex-basis: 100%;
@@ -356,7 +380,7 @@ input, textarea {
 .sign-up .interactive form .terms #checkbox-visible {
   margin-right: 10px;
   width: 20px;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #1C69D4;
   border-radius: 3px;
   background-color: #FCFCFC;
 }
@@ -375,7 +399,7 @@ input, textarea {
   font-size: 16px;
   font-weight: bold;
   color: #FFFFFF;
-  background-color: #1C69D4;
+  background-color: #D8D8D8;
   border-radius: 3px;
   border: none;
   padding: 13px 0;
@@ -389,6 +413,9 @@ input, textarea {
   .sign-up .interactive form .submit input {
     font-size: 18px;
   }
+}
+.sign-up .interactive form .submit input.activated {
+  background-color: #1C69D4;
 }
 
 .logos {

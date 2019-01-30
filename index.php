@@ -111,32 +111,38 @@
           <form id="myForm" action="#" method="post">
             <div class="input left">
               <label for="firstname">Vorname*</label>
-              <input type="text" name="firstname" id="firstname" value="<?php if (isset($userParams['vorname'])) { echo $userParams['vorname'];} ?>" tabindex="1">
+              <input type="text" name="firstname" id="firstname" regex="name" value="<?php if (isset($userParams['vorname'])) { echo $userParams['vorname'];} ?>" tabindex="1">
             </div>
 
             <div class="input right">
               <label for="lastname">Name*</label>
-              <input type="text" name="lastname" id="lastname" value="<?php echo $lastname; ?>" tabindex="1">
+              <input type="text" name="lastname" id="lastname" regex="name" value="<?php echo $lastname; ?>" tabindex="1">
             </div>
 
             <div class="input left">
               <label for="street">Strasse / Nr.</label>
-              <input type="text" name="street" id="street" value="<?php if (isset($userParams['strasse'])) { echo $userParams['strasse'];} ?>" tabindex="1">
+              <input type="text" name="street" id="street" regex="street" class="address-field" value="<?php if (isset($userParams['strasse'])) { echo $userParams['strasse'];} ?>" tabindex="1">
             </div>
 
-            <div class="input right">
-              <label for="zip">PLZ / Ort</label>
-              <input type="text" name="zip" id="zip" value="<?php if (isset($userParams['ort'])) { echo $userParams['ort'];} ?>" tabindex="1">
+            <div class="input right location">
+              <div class="zip">
+                <label for="zip">PLZ</label>
+                <input type="text" name="zip" id="zip" regex="zip" class="address-field" value="<?php if (isset($userParams['ort'])) { echo $userParams['ort'];} ?>" tabindex="1">
+              </div>
+              <div class="place">
+                <label for="place">Ort</label>
+                <input type="text" name="place" id="place" regex="place" class="address-field" value="<?php if (isset($userParams['ort'])) { echo $userParams['ort'];} ?>" tabindex="1">
+              </div>
             </div>
 
             <div class="input left">
               <label for="email">E-Mail*</label>
-              <input type="text" name="email" id="email" value="<?php if (isset($userParams['e-mail'])) { echo $userParams['e-mail'];} ?>" tabindex="1">
+              <input type="text" name="email" id="email" regex="email" value="<?php if (isset($userParams['e-mail'])) { echo $userParams['e-mail'];} ?>" tabindex="1">
             </div>
 
             <div class="input right">
               <label for="phone">Telefonnummer*</label>
-              <input type="text" name="phone" id="phone" value="<?php if (isset($userParams['telefon'])) { echo $userParams['telefon'];} ?>" tabindex="1">
+              <input type="text" name="phone" id="phone" regex="phone" value="<?php if (isset($userParams['telefon'])) { echo $userParams['telefon'];} ?>" tabindex="1">
             </div>
 
             <div class="text-area">
@@ -177,6 +183,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/validate.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
