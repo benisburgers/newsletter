@@ -61,6 +61,11 @@ label, span {
   font-size: 13px;
 }
 
+a {
+  color: #1C69D4;
+  text-decoration: none;
+}
+
 @media (min-width: 992px) {
   p {
     font-size: 18px;
@@ -334,15 +339,20 @@ label, span {
   flex-basis: 100%;
   margin-bottom: 50px;
 }
+.sign-up .interactive form .terms label {
+  display: flex;
+  align-items: flex-start;
+}
 @media (min-width: 768px) {
   .sign-up .interactive form .terms label {
-    display: flex;
     align-items: center;
   }
 }
 .sign-up .interactive form .terms #checkbox-visible {
   margin-right: 10px;
   width: 20px;
+  border: 1px solid #E3E3E3;
+  border-radius: 3px;
 }
 .sign-up .interactive form .terms #checkbox-invisible {
   display: none;

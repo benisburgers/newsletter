@@ -45,13 +45,13 @@
     </section>
     <section class="introduction side-padding">
       <p class="strong">
-        Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister Patrick Küng höchstpersönlich die perfekte Kurventechnik.
+        Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister <a href="#">Patrick Küng</a> höchstpersönlich die perfekte Kurventechnik.
       </p>
       <p>
-        Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der Motta-Hütte. Unser Partnerbetrieb am Sonnenhang der Lenzerheid gehört zu den zehn besten Skihütten der Schweiz. Das Restaurant mit 14 Gault-Millau Punkten serviert Ihnen am 6. März ein exquisites Alpengourmet-Menu und verwöhnt Sie mit einer Degustation edler Weine.
+        Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der <a href="#">Motta-Hütte</a>. Unser Partnerbetrieb am Sonnenhang der Lenzerheid gehört zu den zehn besten Skihütten der Schweiz. Das Restaurant mit 14 Gault-Millau Punkten serviert Ihnen am 6. März ein exquisites Alpengourmet-Menu und verwöhnt Sie mit einer Degustation edler Weine.
       </p>
       <p>
-        Ihren Abend im Winterwunderland verbringen Sie individuell, bevor Sie im 5*Hotel XY den erstklassigen Erlebnistag gemütlich abschliessen.
+        Ihren Abend im Winterwunderland verbringen Sie individuell, bevor Sie im <a href="#">5*Hotel XY</a> den erstklassigen Erlebnistag gemütlich abschliessen.
       </p>
     </section>
     <section class="images side-padding">
@@ -77,21 +77,22 @@
       <div class="times">
         <div class="time one">
           <h3>9.00</h3>
-          <p>Kaffee und Gipfeli an der Talstation Heimberg in Parpan (individuelle Hinreise)</p>
+          <p>Kaffee und Gipfeli an der <a href="#">Talstation Heimberg</a> in Parpan (individuelle Hinreise)</p>
         </div>
         <div class="time two">
           <h3>9.45-13.30</h3>
-          <p>Skifahren mit Weltmeister Patrick Küng</p>
+          <p>Skifahren mit Weltmeister <a href="#">Patrick Küng</a></p>
         </div>
         <div class="time three">
           <h3>13.30 – 17.00</h3>
-          <p>Gaumenschmaus in der Motta-Hütte und Degustation erlesener Weine</p>
+          <p>Gaumenschmaus in der <a href="#">Motta-Hütte</a> und Degustation erlesener Weine</p>
         </div>
         <div class="time four">
           <h3>ab 17.00</h3>
-          <p>Freies Programm in der alpinen Oase Lenzerheide Valbella
+          <p>Freies Programm in der alpinen Oase <a href="#">Lenzerheide Valbella</a>
             <br/>
-          Übernachtung im 5*Hotel XY</p>
+          Übernachtung im <a href="#">5*Hotel XY</a>
+        </p>
         </div>
       </div>
     </section>
@@ -145,7 +146,7 @@
               <input type="checkbox" name="checkbox" id="checkbox-invisible">
               <label for="checkbox-invisible">
                 <img src="img/checkbox_check.svg" alt="checkbox" id="checkbox-visible">
-                Ich bin mit den Teilnahmebedingungen einverstanden
+                <span>Ich bin mit den <a href="#">Teilnahmebedingungen</a> einverstanden</span>
               </label>
             </div>
             <div class="submit">
