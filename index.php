@@ -142,8 +142,11 @@
               <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
             </div>
             <div class="terms">
-              <input type="checkbox" name="checkbox" id="checkbox">
-              <label for="checkbox">Ich bin mit den Teilnahmebedingungen einverstanden</label>
+              <input type="checkbox" name="checkbox" id="checkbox-invisible">
+              <label for="checkbox-invisible">
+                <img src="img/checkbox_check.svg" alt="checkbox" id="checkbox-visible">
+                Ich bin mit den Teilnahmebedingungen einverstanden
+              </label>
             </div>
             <div class="submit">
               <input type="submit" value="Submit" id="ajaxButton">

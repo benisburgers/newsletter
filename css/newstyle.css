@@ -34,8 +34,8 @@ section {
 }
 @media (min-width: 768px) {
   .main-body {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 3.33%;
+    padding-right: 3.33%;
   }
 }
 
@@ -280,6 +280,25 @@ section {
 .sign-up .interactive form .terms {
   flex-basis: 100%;
   margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .sign-up .interactive form .terms label {
+    display: flex;
+    align-items: center;
+  }
+}
+.sign-up .interactive form .terms #checkbox-visible {
+  margin-right: 10px;
+  width: 20px;
+}
+.sign-up .interactive form .terms #checkbox-invisible {
+  display: none;
+}
+.sign-up .interactive form .terms #checkbox-invisible:checked ~ label #checkbox-visible {
+  background-color: red;
+}
+.sign-up .interactive form .terms #checkbox-visible {
+  border: 1px solid black;
 }
 .sign-up .interactive form .submit {
   flex-basis: 100%;
