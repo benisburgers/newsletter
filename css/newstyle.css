@@ -1,110 +1,439 @@
+@font-face {
+  font-family: "BMW Type Global Pro";
+  src: url("../fonts/bmwtypewebli_all.ttf");
+}
+@font-face {
+  font-family: "BMW Type Global Pro";
+  src: url("../fonts/bmwtypewebbo_all.ttf");
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "BMW Type Global Pro";
+  color: #000000;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   background-color: black;
   color: white;
+  margin-bottom: 30px;
+  padding: 0 3.33%;
+  height: 77px;
+  align-items: center;
+}
+
+section {
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 130px;
+  }
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+label, span {
+  font-size: 13px;
+}
+
+a {
+  color: #1C69D4;
+  text-decoration: none;
+}
+
+input, textarea {
+  border: 1px solid #E3E3E3;
+  border-radius: 3px;
+  background-color: #FCFCFC;
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+.strong {
+  font-weight: bold;
 }
 
 .main-body {
   overflow: hidden;
+  max-width: 929px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .main-body {
+    padding-left: 3.33%;
+    padding-right: 3.33%;
+  }
 }
 
 .side-padding {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 3.33%;
+  padding-right: 3.33%;
+}
+@media (min-width: 768px) {
+  .side-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-.header .title h1 {
-  margin: 20px 0;
+.start {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
-.header .title p {
+@media (min-width: 768px) {
+  .start {
+    flex-direction: row;
+    margin-bottom: 130px;
+  }
+}
+.start .title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .start .title {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .start .title {
+    margin-right: 30px;
+  }
+}
+.start .title h1 {
+  margin: 0 0 20px;
+}
+.start .title .intro-header {
   margin: 0 0 30px;
+  font-size: 21px;
+  font-weight: bold;
 }
-.header .image-container img {
+@media (min-width: 768px) {
+  .start .title .intro-header {
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .start .title .intro-header {
+    font-size: 34px;
+  }
+}
+.start .image-container {
+  flex: 2;
+}
+.start .image-container img {
   max-width: 100%;
-  margin-bottom: 26px;
 }
 
+.introduction {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .introduction {
+    flex-direction: row;
+  }
+}
 .introduction p {
+  flex: 1;
+  margin: 0 0 30px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .introduction p {
+    margin: 0;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .introduction p {
+    margin-right: 30px;
+  }
+}
+.introduction p:last-child {
   margin: 0;
-}
-.introduction p.one {
-  margin-bottom: 5px;
-}
-.introduction p.two {
-  margin-bottom: 25px;
-}
-.introduction p.three {
-  margin-bottom: 80px;
 }
 
 .images {
   display: flex;
   overflow: scroll;
-  margin-bottom: 64px;
 }
-.images .image-container.last {
-  padding-right: 15px;
+.images .column {
+  margin-right: 20px;
+}
+@media (min-width: 992px) {
+  .images .column {
+    margin-right: 30px;
+  }
+}
+.images .column:last-child {
+  margin-right: 0;
 }
 .images img {
-  width: 231px;
-  margin-bottom: 9px;
+  width: 100%;
+  min-width: 253px;
+  margin-bottom: 10px;
 }
 .images span {
   display: block;
-}
-.images span.strong {
-  font-weight: bold;
 }
 
 .program h2 {
   margin: 0 0 10px;
 }
+.program .times {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .program .times {
+    flex-direction: row;
+  }
+}
+.program .times .time {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .program .times .time {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .program .times .time {
+    margin-right: 30px;
+  }
+}
+.program .times .time:last-child {
+  margin-right: 0;
+}
 .program .times h3 {
-  margin: 30px 0 10px;
+  margin: 30px 0 0;
 }
 .program .times p {
-  margin: 0;
+  margin: 10px 0 0;
 }
 
+.sign-up {
+  display: flex;
+  flex-direction: column;
+}
 .sign-up h2 {
-  margin: 80px 0 30px;
+  margin: 0px 0 30px;
+}
+.sign-up .body {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .sign-up .body {
+    flex-direction: row;
+  }
+}
+.sign-up .info {
+  flex: 1;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .sign-up .info {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .sign-up .info {
+    margin-right: 30px;
+  }
 }
 .sign-up .info p {
-  margin: 1em 0;
+  margin: 0 0 1em;
 }
-.sign-up .info p.strong {
-  font-weight: bold;
+.sign-up .info p:last-child {
+  margin: 0;
 }
-.sign-up .interactive form span {
+.sign-up .interactive {
+  flex: 2;
+}
+.sign-up .interactive form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sign-up .interactive form .input {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .sign-up .interactive form .input {
+    flex-basis: calc(50% - (20px / 2));
+  }
+  .sign-up .interactive form .input.left {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .sign-up .interactive form .input {
+    flex-basis: calc(50% - (30px / 2));
+  }
+  .sign-up .interactive form .input.left {
+    margin-right: 30px;
+  }
+}
+.sign-up .interactive form .input.location .zip {
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .sign-up .interactive form .input.location {
+    display: flex;
+  }
+  .sign-up .interactive form .input.location .zip {
+    flex: 1;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .sign-up .interactive form .input.location .place {
+    flex: 3;
+  }
+}
+@media (min-width: 992px) {
+  .sign-up .interactive form .input.location .zip {
+    margin-right: 30px;
+  }
+}
+.sign-up .interactive form .input label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #ABABAB;
+}
+.sign-up .interactive form .input input {
+  width: 100%;
+  box-sizing: border-box;
   display: block;
 }
-.sign-up .interactive form input {
-  border: 1px solid black;
-  width: 100%;
+.sign-up .interactive form .input input.invalid {
+  border: 1px solid #1C69D4;
 }
-.sign-up .interactive form textarea {
-  border: 1px solid black;
-  width: 100%;
+.sign-up .interactive form .text-area {
+  flex-basis: 100%;
+  margin-bottom: 30px;
 }
-.sign-up .interactive .terms {
-  margin: 31px 0 50px;
+.sign-up .interactive form .text-area label {
+  color: #ABABAB;
 }
-.sign-up .interactive button {
-  border: 1px solid black;
+.sign-up .interactive form .text-area textarea {
   width: 100%;
-  margin: 0 0 80px;
+  box-sizing: border-box;
+  display: block;
+  resize: none;
+}
+.sign-up .interactive form .terms {
+  flex-basis: 100%;
+  margin-bottom: 50px;
+}
+.sign-up .interactive form .terms label {
+  display: flex;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .sign-up .interactive form .terms label {
+    align-items: center;
+  }
+}
+.sign-up .interactive form .terms #checkbox-visible {
+  margin-right: 10px;
+  width: 20px;
+  border: 1px solid #1C69D4;
+  border-radius: 3px;
+  background-color: #FCFCFC;
+}
+.sign-up .interactive form .terms #checkbox-invisible {
+  display: none;
+}
+.sign-up .interactive form .terms #checkbox-invisible:checked ~ label #checkbox-visible {
+  background-color: #1C69D4;
+  border: 1px solid #1C69D4;
+}
+.sign-up .interactive form .submit {
+  flex-basis: 100%;
+}
+.sign-up .interactive form .submit input {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #D8D8D8;
+  border-radius: 3px;
+  border: none;
+  padding: 13px 0;
+}
+@media (min-width: 768px) {
+  .sign-up .interactive form .submit input {
+    width: 221px;
+  }
+}
+@media (min-width: 992px) {
+  .sign-up .interactive form .submit input {
+    font-size: 18px;
+  }
+}
+.sign-up .interactive form .submit input.activated {
+  background-color: #1C69D4;
 }
 
 .logos {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 68px;
+}
+@media (min-width: 768px) {
+  .logos {
+    justify-content: space-around;
+  }
 }
 
 footer {
-  background-color: grey;
-  padding: 23px 15px 38px;
+  display: flex;
+  align-items: center;
+  padding: 0 3.33%;
+  height: 77px;
+  background-color: #D8D8D8;
 }
 
 /*# sourceMappingURL=newstyle.css.map */
