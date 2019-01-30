@@ -1,3 +1,40 @@
+<?php
+  // get url parameter as key/value array -> $userParams
+  parse_str($_SERVER['QUERY_STRING'], $userParams);
+
+  // store user parameter
+  $userSalutation = getParamValue('sex', $userParams);
+  $firstname = getParamValue('firstname', $userParams);
+  $lastname = getParamValue('lastname', $userParams);
+  $email = getParamValue('email', $userParams);
+  $store = getParamValue('store', $userParams);
+
+  // store personalized salutation
+  $salutation = "";
+
+  switch($userSalutation){
+    case 'Herr':
+      $salutation = "Sehr geehrter Herr";
+      break;
+    case 'Frau':
+      $salutation = "Sehr geehrte Frau";
+      break;
+    case 'Herr und Frau':
+      $salutation = "Sehr geehrte Frau und Herr";
+      break;
+    default: "Sehr geehrte Damen und Herren";
+  } 
+
+  // get parameter value with key
+  function getParamValue($key, $userParams) {
+    if (isset($userParams[$key])) {
+      return $userParams[$key];
+    } else {
+      return "";
+    }
+  }
+?>
+
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -45,6 +82,7 @@
     </section>
     <section class="introduction side-padding">
       <p class="strong">
+        <?php echo $salutation . " " . $lastname; ?><br /><br />
         Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister <a href="#">Patrick Küng</a> höchstpersönlich die perfekte Kurventechnik.
       </p>
       <p>
@@ -105,13 +143,13 @@
           unvergessliches Abenteuer im Wert von über 2’000 Franken pro Paar. Teilnahmeschluss
           ist der 20. Februar 2019.</p>
           <p>Wir drücken Ihnen die Daumen.</p>
-          <p class="strong">Ihre Binelli Group Zürich</p>
+          <p class="strong">Ihre Binelli Group <?php echo $store; ?></p>
         </div>
         <div class="interactive">
           <form id="myForm" action="#" method="post">
             <div class="input left">
               <label for="firstname">Vorname*</label>
-              <input type="text" name="firstname" id="firstname" regex="name" value="<?php if (isset($userParams['vorname'])) { echo $userParams['vorname'];} ?>" tabindex="1">
+              <input type="text" name="firstname" id="firstname" regex="name" value="<?php echo $firstname; ?>" tabindex="1">
             </div>
 
             <div class="input right">
@@ -121,23 +159,23 @@
 
             <div class="input left">
               <label for="street">Strasse / Nr.</label>
-              <input type="text" name="street" id="street" regex="street" class="address-field" value="<?php if (isset($userParams['strasse'])) { echo $userParams['strasse'];} ?>" tabindex="1">
+              <input type="text" name="street" id="street" regex="street" class="address-field" value="" tabindex="1">
             </div>
 
             <div class="input right location">
               <div class="zip">
                 <label for="zip">PLZ</label>
-                <input type="text" name="zip" id="zip" regex="zip" class="address-field" value="<?php if (isset($userParams['ort'])) { echo $userParams['ort'];} ?>" tabindex="1">
+                <input type="text" name="zip" id="zip" regex="zip" class="address-field" value="" tabindex="1">
               </div>
               <div class="place">
                 <label for="place">Ort</label>
-                <input type="text" name="place" id="place" regex="place" class="address-field" value="<?php if (isset($userParams['ort'])) { echo $userParams['ort'];} ?>" tabindex="1">
+                <input type="text" name="place" id="place" regex="place" class="address-field" value="" tabindex="1">
               </div>
             </div>
 
             <div class="input left">
               <label for="email">E-Mail*</label>
-              <input type="text" name="email" id="email" regex="email" value="<?php if (isset($userParams['e-mail'])) { echo $userParams['e-mail'];} ?>" tabindex="1">
+              <input type="text" name="email" id="email" regex="email" value="<?php echo $email; ?>" tabindex="1">
             </div>
 
             <div class="input right">
