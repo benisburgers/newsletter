@@ -61,7 +61,7 @@
   <!-- Add your site or application content here -->
   <header>
     <div class="logo left">
-      Binelli Group
+      <span>Binelli Group</span>
     </div>
     <div class="logo right">
       Logos

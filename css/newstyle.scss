@@ -55,6 +55,12 @@ header {
   }
   height: 77px;
   align-items: center;
+  .logo.left {
+    span {
+      font-weight: bold;
+      font-size: 21px;
+    }
+  }
 }
 section {
   margin-bottom: 80px;
