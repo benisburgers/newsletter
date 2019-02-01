@@ -55,12 +55,12 @@
 				<label for="phone">Telefonnummer</label>
 				<input type="text" name="phone" id="phone" value="<?php if (isset($userParams['telefon'])) { echo $userParams['telefon'];} ?>" tabindex="1">
 			</div>
-			
+
 			<div>
 				<label for="textarea">Bemerkungsfeld</label>
 				<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
 			</div>
-			
+
 			<div>
 				<label for="checkbox">Ich bin mit den Teilnahmebedingungen einverstanden</label>
 				<input type="checkbox" name="checkbox">
@@ -91,18 +91,18 @@
 			        if (!httpRequest) {
 			            alert('Giving up :( Cannot create an XMLHTTP instance');
 			            return false;
-			        } 
+			        }
 			    } else {
 			        // code for IE6, IE5
 			        httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
 			    }
-			    
+
 			    httpRequest.onreadystatechange = function() {
 			        if (this.readyState == 4 && this.status == 200) {
 			        	document.getElementById("demo").innerHTML = this.responseText;
 			        }
 			    };
-			    
+
 			    httpRequest.open("GET","updateuser.php?id=" + userId,true);
 			    httpRequest.send();
 			}

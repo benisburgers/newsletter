@@ -33,7 +33,7 @@
   </header>
   <div class="main-body">
     <section class="start">
-      <div class="title side-padding">
+      <div class="title side-margin">
         <h1>Wettbewerb</h1>
         <p class="intro-header">
           EINZIGARTIGES SKIERLEBNIS FÜR 4x2 PERSONEN IM WERT VON ÜBER 10’000 FRANKEN
@@ -43,7 +43,7 @@
         <img src="img/patrick_kueng.jpg" alt="Patrick Kueng">
       </div>
     </section>
-    <section class="introduction side-padding">
+    <section class="introduction side-margin">
       <p class="strong">
         Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister <a href="#">Patrick Küng</a> höchstpersönlich die perfekte Kurventechnik.
       </p>
@@ -55,7 +55,7 @@
         Ihren Abend im Winterwunderland verbringen Sie individuell, bevor Sie im <a href="#">5*Hotel XY</a> den erstklassigen Erlebnistag gemütlich abschliessen.
       </p>
     </section>
-    <section class="images side-padding">
+    <section class="images side-margin">
       <div class="column motta">
         <img src="img/motta.jpg" alt="Motta Hütte">
         <span class="strong">Motta Hütte</span>
@@ -72,7 +72,7 @@
         <span>Copyright: Lorem Ipsum</span>
       </div>
     </section>
-    <section class="program side-padding">
+    <section class="program side-margin">
       <h2>Programm</h2>
       <p class="strong">Mittwoch, 6. März 2019</p>
       <div class="times">
@@ -97,7 +97,7 @@
         </div>
       </div>
     </section>
-    <section class="sign-up side-padding">
+    <section class="sign-up side-margin">
       <h2>Teilnahme</h2>
       <div class="body">
         <div class="info">
@@ -163,7 +163,7 @@
         </div>
       </div>
     </section>
-    <section class="logos side-padding">
+    <section class="logos side-margin">
       <div class="logo motta">
         Motta
       </div>
@@ -184,6 +184,10 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/validate.js"></script>
+  <script src="js/lightslider.js"></script>
+  <script type="text/javascript">
+</script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
