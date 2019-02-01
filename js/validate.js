@@ -107,7 +107,7 @@ $(document).ready(function(){
 
     //Create object with a regex to validate each field
     var regex = {
-      name:   /^[a-z ,.'-]+$/i,
+      name:   /^[A-Za-zÀ-ÖØ-öø-ÿ ,.'-]+$/i,
       email:  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
       phone:  /^[0-9]+$/,
       street: /^[a-z \d,.'-]+$/i,
