@@ -68,10 +68,13 @@
     	last_update TIMESTAMP
     );";
 
-    $sql .= "REPLACE INTO $participantTable
-		(firstname, lastname, street, zip, place, email, phone, message)
-	VALUES
-		('$firstname', '$lastname', '$street', '$zip', '$place', '$email', '$phone', '$message')";
+ //    $sql .= "REPLACE INTO $participantTable
+	// 	(firstname, lastname, street, zip, place, email, phone, message)
+	// VALUES
+	// 	('$firstname', '$lastname', '$street', '$zip', '$place', '$email', '$phone', '$message')";
+
+	$sql .= "INSERT INTO $participantTable (email) VALUES ($email)
+  ON DUPLICATE KEY UPDATE firstname=$firstname;";
 
  //    $sql .= "INSERT INTO $participantTable (email)
 	// VALUES ($email)
