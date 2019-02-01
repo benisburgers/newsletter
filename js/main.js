@@ -15,12 +15,12 @@ function makeRequest(isValid) {
           if (!httpRequest) {
               alert('Giving up :( Cannot create an XMLHTTP instance');
               return false;
-          } 
+          }
       } else {
           // code for IE6, IE5
           httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
       }
-      
+
       httpRequest.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             // TODO: show confirm text if successful
@@ -28,7 +28,7 @@ function makeRequest(isValid) {
             console.log(this.responseText);
           }
     };
-    
+
     httpRequest.open("POST","updateuser.php", true);
     httpRequest.send(new FormData(formElement));
   }

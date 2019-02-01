@@ -11,15 +11,9 @@ $(document).ready(function(){
       termsChecked = false;
 //Validate Form
 
-    //create variable for whether entourage is coming
-    var entourage_is_coming = false;
-
-    //create variable to activate submit button
-    var button_is_active = false;
-
     //Check form validity everytime value in input field is changed
     $(".input").on('input', function() {
-      validateForm();
+      checkForm();
     });
 
     //Are terms and conditions accepted
@@ -30,11 +24,11 @@ $(document).ready(function(){
       else {
         termsChecked = false;
       }
-      checkMe();
+      checkForm();
     });
 
     //Check Email and Name field AND all address boxes
-    function checkMe() {
+    function checkForm() {
       //if (name and email are valid) AND address fields are valid (or empty), return true. Else return false.
       if (checkMandatory() & checkAddress()) {
         $('#ajaxButton').addClass("activated");
@@ -133,26 +127,4 @@ $(document).ready(function(){
       }
     }
 
-    //activate submit button (positive and negative) and remove .inactive class (visually)
-    function activateButton() {
-      $("#ajaxButton").addClass("activated");
-    }
-
-    //deactivate button (positive and negative) and add .inactive class (visually)
-    function deactivateButton() {
-      $("#ajaxButton").removeClass("activated");
-    }
-
-    //If both forms (me and entourage) are valid, activate Button.
-    //Else: deactivate Button.
-    function validateForm() {
-      if (checkMe()) {
-        activateButton();
-      }
-      else {
-        deactivateButton();
-      }
-    }
-    //Run upon load
-    validateForm();
 });
