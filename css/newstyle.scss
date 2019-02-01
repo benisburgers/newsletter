@@ -46,7 +46,13 @@ header {
   background-color: black;
   color: white;
   margin-bottom: 30px;
-  padding: 0 3.33%;
+  padding: 0 15px;
+  @media(min-width: $medium-device) {
+    padding: 0 20px;
+  }
+  @media(min-width: $extra-large-device) {
+    padding: 0 50px;
+  }
   height: 77px;
   align-items: center;
 }
@@ -101,14 +107,15 @@ input,textarea {
   overflow: hidden;
   max-width: 929px;
   margin: 0 auto;
+  //padding on purpose to center body. Leave margin as is.
   @media(min-width: $medium-device) {
-    padding-left: 3.33%;
-    padding-right: 3.33%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .side-margin {
-  margin-left: 3.33%;
-  margin-right: 3.33%;
+  margin-left: 15px;
+  margin-right: 15px;
   @media(min-width: $medium-device) {
     margin-left: 0;
     margin-right: 0;
@@ -406,7 +413,13 @@ input,textarea {
 footer {
   display: flex;
   align-items: center;
-  padding: 0 3.33%;
+  padding: 0 15px;
   height: 77px;
-  background-color: #D8D8D8
+  background-color: #D8D8D8;
+  @media(min-width: $medium-device) {
+    padding: 0 20px;
+  }
+  @media(min-width: $extra-large-device) {
+    padding: 0 50px;
+  }
 }

@@ -24,9 +24,19 @@ header {
   background-color: black;
   color: white;
   margin-bottom: 30px;
-  padding: 0 3.33%;
+  padding: 0 15px;
   height: 77px;
   align-items: center;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    padding: 0 50px;
+  }
 }
 
 section {
@@ -96,14 +106,14 @@ input, textarea {
 }
 @media (min-width: 768px) {
   .main-body {
-    padding-left: 3.33%;
-    padding-right: 3.33%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 .side-margin {
-  margin-left: 3.33%;
-  margin-right: 3.33%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 @media (min-width: 768px) {
   .side-margin {
@@ -446,9 +456,19 @@ input, textarea {
 footer {
   display: flex;
   align-items: center;
-  padding: 0 3.33%;
+  padding: 0 15px;
   height: 77px;
   background-color: #D8D8D8;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    padding: 0 50px;
+  }
 }
 
 /*# sourceMappingURL=newstyle.css.map */
