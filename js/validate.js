@@ -112,7 +112,7 @@ $(document).ready(function(){
       phone:  /^[0-9]+$/,
       street: /^[a-z \d,.'-]+$/i,
       zip:    /^[\d]{4}?$/,
-      place:  /^[a-z ,.'-]+$/i,
+      place:  /^[A-Za-zÀ-ÖØ-öø-ÿ ,.'-]+$/i,
     };
 
     //Validate each field against its corresponding regex. Return true or false.
