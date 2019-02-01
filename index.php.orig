@@ -25,7 +25,7 @@
     default: "Sehr geehrte Damen und Herren";
   } 
 
-  // get parameter value with key
+  // returns parameter value with key as argument
   function getParamValue($key, $userParams) {
     if (isset($userParams[$key])) {
       return $userParams[$key];
@@ -223,12 +223,15 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/validate.js"></script>
+<<<<<<< HEAD
+=======
   <script src="js/lightslider.js"></script>
   <script type="text/javascript">
 </script>
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+>>>>>>> 395a82eb64655bf40d2c557110b66e0ca5bcd55c
   <script>
     // event listener for form submit
     document.getElementById("ajaxButton").addEventListener('click', function(e) {

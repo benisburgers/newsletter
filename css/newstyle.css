@@ -1,10 +1,10 @@
 @font-face {
   font-family: "BMW Type Global Pro";
-  src: url("../fonts/bmwtypewebli_all.ttf");
+  src: url("../fonts/bmwtypewebli_all.ttf") format("truetype"), url("../fonts/bmwtypewebli_all.woff") format("woff"), url("../fonts/bmwtypewebli_all.woff2") format("woff2"), url("../fonts/bmwtypewebli_all.eot") format("eot"), url("../fonts/bmwtypewebli_all.svg") format("svg");
 }
 @font-face {
   font-family: "BMW Type Global Pro";
-  src: url("../fonts/bmwtypewebbo_all.ttf");
+  src: url("../fonts/bmwtypewebbo_all.ttf"), url("../fonts/bmwtypewebbo_all.ttf") format("truetype"), url("../fonts/bmwtypewebbo_all.woff") format("woff"), url("../fonts/bmwtypewebbo_all.woff2") format("woff2"), url("../fonts/bmwtypewebbo_all.eot") format("eot"), url("../fonts/bmwtypewebbo_all.svg") format("svg");
   font-weight: bold;
 }
 * {
@@ -14,7 +14,7 @@
 
 body {
   width: 100%;
-  font-family: "BMW Type Global Pro";
+  font-family: "BMW Type Global Pro", "Helvetica", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -101,14 +101,14 @@ input, textarea {
   }
 }
 
-.side-padding {
-  padding-left: 3.33%;
-  padding-right: 3.33%;
+.side-margin {
+  margin-left: 3.33%;
+  margin-right: 3.33%;
 }
 @media (min-width: 768px) {
-  .side-padding {
-    padding-left: 0;
-    padding-right: 0;
+  .side-margin {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -163,6 +163,11 @@ input, textarea {
 .start .image-container img {
   max-width: 100%;
 }
+@media (min-width: 768px) {
+  .start .image-container img {
+    border-radius: 5px;
+  }
+}
 
 .introduction {
   display: flex;
@@ -212,9 +217,17 @@ input, textarea {
   width: 100%;
   min-width: 253px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 .images span {
   display: block;
+}
+
+.image-gallery li {
+  width: 253px;
+}
+.image-gallery img {
+  width: 253px;
 }
 
 .program h2 {
@@ -347,6 +360,7 @@ input, textarea {
   width: 100%;
   box-sizing: border-box;
   display: block;
+  height: 34px;
 }
 .sign-up .interactive form .input input.invalid {
   border: 1px solid #1C69D4;
