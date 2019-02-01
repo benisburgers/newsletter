@@ -6,8 +6,9 @@ $(document).ready(function(){
       zip = $("#zip"),
       place = $("#place"),
       email = $("#email"),
-      phone = $("#phone")
-  var termsChecked = false;
+      phone = $("#phone"),
+      valid = false,
+      termsChecked = false;
 //Validate Form
 
     //create variable for whether entourage is coming
@@ -32,27 +33,16 @@ $(document).ready(function(){
       checkMe();
     });
 
-
-
-    //Check whether entourage is coming whenever checkbox-invisible is checked. Validate forms.
-    $('#checkbox-invisible').change(function(){
-      if ($("#checkbox-invisible").is(':checked')) {
-        entourage_is_coming = true;
-      }
-      else {
-        entourage_is_coming = false;
-      }
-      validateForm();
-    });
-
     //Check Email and Name field AND all address boxes
     function checkMe() {
       //if (name and email are valid) AND address fields are valid (or empty), return true. Else return false.
       if (checkMandatory() & checkAddress()) {
-        return true;
+        $('#ajaxButton').addClass("activated");
+        valid = true;
       }
       else {
-        return false;
+        $('#ajaxButton').removeClass("activated");
+        valid = false;
       }
     }
 
@@ -165,5 +155,4 @@ $(document).ready(function(){
     }
     //Run upon load
     validateForm();
-
 });

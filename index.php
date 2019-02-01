@@ -25,7 +25,7 @@
     default: "Sehr geehrte Damen und Herren";
   } 
 
-  // get parameter value with key
+  // returns parameter value with key as argument
   function getParamValue($key, $userParams) {
     if (isset($userParams[$key])) {
       return $userParams[$key];
@@ -184,8 +184,8 @@
             </div>
 
             <div class="text-area">
-              <label for="textarea">Bemerkungsfeld</label>
-              <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+              <label for="message">Bemerkungsfeld</label>
+              <textarea cols="40" rows="8" name="message" id="message"></textarea>
             </div>
             <div class="terms">
               <input type="checkbox" name="checkbox" id="checkbox-invisible">
@@ -213,6 +213,7 @@
       </div>
     </section>
   </div>
+  <div id="debug"></div>
   <footer>
     <span>Lorem ipsum dolor sit amet</span>
   </footer>
@@ -222,13 +223,13 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/validate.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    // event listener for form submit
+    document.getElementById("ajaxButton").addEventListener('click', function(e) {
+      e.preventDefault();
+      	makeRequest(valid);
+    }, false);
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
