@@ -23,7 +23,7 @@
       $salutation = "Sehr geehrte Frau und Herr";
       break;
     default: "Sehr geehrte Damen und Herren";
-  } 
+  }
 
   // get parameter value with key
   function getParamValue($key, $userParams) {
@@ -50,7 +50,6 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/newstyle.css">
 </head>
 
