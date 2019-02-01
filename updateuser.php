@@ -55,26 +55,26 @@
 
     // initialize table
     $sql = "CREATE TABLE IF NOT EXISTS $participantTable (
-    	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    	id INT(6) AUTO_INCREMENT,
     	firstname VARCHAR(30) NOT NULL,
     	lastname VARCHAR(30) NOT NULL,
     	street VARCHAR(30) NOT NULL,
     	zip SMALLINT(5) NOT NULL,
     	place VARCHAR(30) NOT NULL,
-    	email VARCHAR(50) NOT NULL,
+    	email VARCHAR(50) UNSIGNED PRIMARY KEY,
     	phone INT(20) NOT NULL,
     	message TEXT(400) NOT NULL,
     	date_created TIMESTAMP,
     	last_update TIMESTAMP
     );";
 
- //    $sql .= "REPLACE INTO $participantTable
-	// 	(firstname, lastname, street, zip, place, email, phone, message)
-	// VALUES
-	// 	('$firstname', '$lastname', '$street', '$zip', '$place', '$email', '$phone', '$message')";
+    $sql .= "REPLACE INTO $participantTable
+		(firstname, lastname, street, zip, place, email, phone, message)
+	VALUES
+		('$firstname', '$lastname', '$street', '$zip', '$place', '$email', '$phone', '$message')";
 
-	$sql .= "INSERT INTO $participantTable (email) VALUES ($email)
-  ON DUPLICATE KEY UPDATE firstname=$firstname;";
+	// $sql .= "INSERT INTO $participantTable (email) VALUES ($email)
+ //  ON DUPLICATE KEY UPDATE firstname=$firstname;";
 
  //    $sql .= "INSERT INTO $participantTable (email)
 	// VALUES ($email)

@@ -82,7 +82,7 @@
     </section>
     <section class="introduction side-margin">
       <p class="strong">
-        <?php echo $salutation . " " . $lastname; ?><br /><br />
+        <?php if ($salutation && $lastname) {echo $salutation . " " . $lastname . "<br /><br />";} ?>
         Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister <a href="#">Patrick Küng</a> höchstpersönlich die perfekte Kurventechnik.
       </p>
       <p>
