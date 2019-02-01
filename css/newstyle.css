@@ -137,21 +137,14 @@ input, textarea {
     margin-bottom: 130px;
   }
 }
+.start .title-container {
+  width: calc(33.33% - 10px);
+}
 .start .title {
-  flex: 1;
+  background: red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-@media (min-width: 768px) {
-  .start .title {
-    margin-right: 20px;
-  }
-}
-@media (min-width: 992px) {
-  .start .title {
-    margin-right: 30px;
-  }
 }
 .start .title h1 {
   margin: 0 0 20px;
@@ -172,7 +165,8 @@ input, textarea {
   }
 }
 .start .image-container {
-  flex: 2;
+  flex: 1;
+  width: calc(66.66% - 10px);
 }
 .start .image-container img {
   max-width: 100%;
@@ -193,6 +187,7 @@ input, textarea {
   }
 }
 .introduction p {
+  background: red;
   flex: 1;
   margin: 0 0 30px;
 }
