@@ -69,13 +69,11 @@
   </header>
   <div class="main-body">
     <section class="start">
-      <div class="title-container">
-        <div class="title side-margin">
-          <h1>Wettbewerb</h1>
-          <p class="intro-header">
-            EINZIGARTIGES SKIERLEBNIS FÜR 4x2 PERSONEN IM WERT VON ÜBER 10’000 FRANKEN
-          </p>
-        </div>
+      <div class="title side-margin">
+        <h1>Wettbewerb</h1>
+        <p class="intro-header">
+          EINZIGARTIGES SKIERLEBNIS FÜR 4x2 PERSONEN IM WERT VON ÜBER 10’000 FRANKEN
+        </p>
       </div>
       <div class="image-container">
         <img src="img/patrick_kueng.jpg" alt="Patrick Kueng">
