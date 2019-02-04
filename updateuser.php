@@ -36,7 +36,7 @@
     $dbHost = 'localhost';
     $dbUser = 'root';
     $dbPass = 'root'; // S4qpy6$5
-    $dbName = 'contest';
+    $dbName = 'test2';
     $participantTable = 'participant';
 
     // connect database

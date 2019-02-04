@@ -49,9 +49,11 @@ header {
   padding: 0 15px;
   @media(min-width: $medium-device) {
     padding: 0 20px;
+    margin-bottom: 80px;
   }
   @media(min-width: $extra-large-device) {
     padding: 0 50px;
+    margin-bottom: 130px;
   }
   height: 77px;
   align-items: center;
@@ -69,7 +71,8 @@ section {
   }
 }
 p {
-  font-size: 16px;
+  font-size: 17px;
+  line-height: 22px;
 }
 h1 {
   font-size: 16px;
@@ -84,7 +87,8 @@ h3 {
   font-weight: bold;
 }
 label, .small {
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 18px;
 }
 a {
   color: #1C69D4;
@@ -153,6 +157,7 @@ input,textarea {
     .intro-header {
       margin: 0 0 30px;
       font-size: 21px;
+      line-height: 26px;
       font-weight: bold;
       @media(min-width: $medium-device) {
         margin: 0;
@@ -272,7 +277,7 @@ input,textarea {
   }
   .info {
     flex-basis: calc(33%);
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     @media(min-width: $medium-device) {
       margin-right: $medium-margin-right;
       margin-bottom: 0;
