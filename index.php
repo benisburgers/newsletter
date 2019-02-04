@@ -231,13 +231,13 @@
     </section>
     <section class="logos side-margin">
       <div class="logo motta">
-        Motta
+        <img src="img/motta-logo.png" alt="Motta Hütte">
       </div>
-      <div class="logo PK">
-        PK
+      <div class="logo arosa">
+        <img src="img/hotel-logo.png" alt="Arosa Lenzerheide">
       </div>
-      <div class="logo Sheraton">
-        Sheraton
+      <div class="logo pk">
+        <img src="img/pk-logo.png" alt="Patrick Küng">
       </div>
     </section>
   </div>

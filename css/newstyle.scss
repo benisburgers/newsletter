@@ -42,6 +42,7 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: black;
   color: white;
@@ -68,10 +69,7 @@ header {
       }
     }
     &.right {
-      height: 20px;
-      @media(min-width: $small-device) {
-        height: 35px;
-      }
+      height: 25px;
       @media(min-width: $medium-device) {
         height: 38px;
       }
@@ -460,9 +458,19 @@ input,textarea {
 }
 .logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   @media(min-width: $medium-device) {
     justify-content: space-around;
+  }
+  .logo {
+    max-height: 72px;
+    @media(min-width: $medium-device) {
+      max-height: 98px;
+    }
+    img {
+      height: 100%;
+    }
   }
 }
 footer {
