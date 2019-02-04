@@ -52,7 +52,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/newstyle.css">
 
-  <link rel="stylesheet" href="js/flickity.pkgd.min.js">
+  <link rel="stylesheet" href="css/flickity.css">
 </head>
 
 <body>
@@ -106,6 +106,22 @@
         <span>Copyright: Lorem Ipsum</span>
       </div>
       <div class="column hotel">
+        <img src="img/hotel.jpg" alt="Motta Hütte">
+        <span class="strong">Sheraton 5* Hotel</span>
+        <span>Copyright: Lorem Ipsum</span>
+      </div>
+    </section>
+    <section class="slide-show slideshow side-margin">
+      <div class="gallery-cell">
+        <img src="img/motta.jpg" alt="Motta Hütte">
+        <span class="strong">Motta Hütte</span>
+        <span>Copyright: Lorem Ipsum</span>
+      </div>
+      <div class="gallery-cell">
+        <img src="img/skifahrer.jpg" alt="Motta Hütte">
+        <span class="strong">Patrick Küng</span>
+        <span>Copyright: Lorem Ipsum</span>      </div>
+      <div class="gallery-cell">
         <img src="img/hotel.jpg" alt="Motta Hütte">
         <span class="strong">Sheraton 5* Hotel</span>
         <span>Copyright: Lorem Ipsum</span>
@@ -250,7 +266,7 @@
   <script src="js/main.js"></script>
   <script src="js/validate.js"></script>
   <script src="js/flickity.pkgd.min.js"></script>
-  
+
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     // event listener for form submit

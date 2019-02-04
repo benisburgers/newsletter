@@ -219,7 +219,12 @@ input, textarea {
 }
 
 .images {
-  display: flex;
+  display: none;
+}
+@media (min-width: 768px) {
+  .images {
+    display: flex;
+  }
 }
 .images .column {
   flex-basis: calc(33%);
@@ -247,13 +252,6 @@ input, textarea {
 .images span {
   color: #ABABAB;
   display: block;
-}
-
-.image-gallery li {
-  width: 253px;
-}
-.image-gallery img {
-  width: 253px;
 }
 
 .program h2 {
@@ -535,6 +533,25 @@ footer {
 .teilnahmebedingungen .modal-header .modal-close span {
   font-size: 25px;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .slide-show {
+    display: none;
+  }
+}
+.slide-show .gallery-cell {
+  width: 253px;
+  margin-right: 20px;
+}
+.slide-show .gallery-cell img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.slide-show .gallery-cell span {
+  color: #ABABAB;
+  display: block;
 }
 
 /*# sourceMappingURL=newstyle.css.map */

@@ -35,19 +35,30 @@ function makeRequest(isValid) {
   }
 }
 
+//Open and close modal
 document.getElementById("modal-open").addEventListener("click", openModal);
 function openModal() {
   document.getElementById("modal").style.display = "block";
   document.getElementsByTagName("BODY")[0].style.overflow="hidden";
 }
-
 document.getElementById("modal-close").addEventListener("click", closeModal);
 function closeModal() {
   document.getElementById("modal").style.display = "none";
   document.getElementsByTagName("BODY")[0].style.overflow="visible";
 }
 
+//Hide form once user submits
 function hideForm() {
   document.getElementById("myForm").style.display = "none";
   document.getElementById("thank-you").style.display = "block";
 }
+
+//activate flickity. if flickity is unavaiable, .slide-show will remain hidden.
+$(document).ready(function(){
+  // $('.slide-show').css("display", "block")
+  $('.slide-show').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+  });
+});

@@ -199,7 +199,10 @@ input,textarea {
   }
 }
 .images {
-  display: flex;
+  display: none;
+  @media(min-width: $medium-device) {
+    display: flex;
+  }
   .column {
     flex-basis: calc(33%);
     min-width: 253px;
@@ -222,14 +225,6 @@ input,textarea {
   span {
     color: #ABABAB;
     display: block;
-  }
-}
-.image-gallery {
-  li {
-    width: 253px;
-  }
-  img {
-    width: 253px;
   }
 }
 .program {
@@ -450,6 +445,7 @@ footer {
     padding: 0 50px;
   }
 }
+//modal
 .teilnahmebedingungen {
   display: none;
   position: fixed;
@@ -481,6 +477,24 @@ footer {
         font-size: 25px;
         font-weight: bold;
       }
+    }
+  }
+}
+.slide-show {
+  @media(min-width: $medium-device) {
+    display: none;
+  }
+  .gallery-cell {
+    width: 253px;
+    margin-right: $medium-margin-right;
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    span {
+      color: #ABABAB;
+      display: block;
     }
   }
 }

@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
   var firstname = $("#firstname"),
       lastname = $("#lastname"),
       street = $("#street")
