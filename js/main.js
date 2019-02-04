@@ -37,7 +37,7 @@ function makeRequest(isValid) {
 //Open and close modal
 document.getElementById("modal-open").addEventListener("click", openModal);
 function openModal() {
-  document.getElementById("modal").style.display = "block";
+  document.getElementById("modal").style.display = "flex";
   document.getElementsByTagName("BODY")[0].style.overflow="hidden";
 }
 document.getElementById("modal-close").addEventListener("click", closeModal);

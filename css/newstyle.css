@@ -510,21 +510,23 @@ footer {
 .teilnahmebedingungen {
   display: none;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-color: rgba(28, 105, 212, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .teilnahmebedingungen .modal-content {
-  height: 100%;
-  margin: 0 auto;
+  width: 100%;
   box-sizing: border-box;
   max-width: 768px;
   background: white;
-  padding: 30px;
+  padding: 15px;
+  margin: 15px;
 }
 .teilnahmebedingungen .modal-header {
   display: flex;
@@ -533,10 +535,11 @@ footer {
 .teilnahmebedingungen .modal-header .modal-close {
   border: 0;
   background: none;
-}
-.teilnahmebedingungen .modal-header .modal-close:hover {
-  cursor: pointer;
   color: #1C69D4;
+}
+.teilnahmebedingungen .modal-header .modal-close:hover, .teilnahmebedingungen .modal-header .modal-close :active {
+  cursor: pointer;
+  color: black;
 }
 .teilnahmebedingungen .modal-header .modal-close span {
   font-size: 25px;
