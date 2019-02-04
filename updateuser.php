@@ -51,7 +51,7 @@
 
     // connect database
     $con = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
-    $con->set_charset("utf8")
+    $con->set_charset("utf8");
 
     // check connection
     if (mysqli_connect_errno()) {
