@@ -1,6 +1,10 @@
+//create global value to access later
+var emailValue;
 // function to execute on click
 function makeRequest(isValid) {
+  //access entered email value for confirmation
   if(isValid) {
+    emailValue = document.getElementById('email').value
     // declare form element
     var formElement = document.getElementById("myForm");
 
@@ -37,7 +41,7 @@ function makeRequest(isValid) {
 //Open and close modal
 document.getElementById("modal-open").addEventListener("click", openModal);
 function openModal() {
-  document.getElementById("modal").style.display = "block";
+  document.getElementById("modal").style.display = "flex";
   document.getElementsByTagName("BODY")[0].style.overflow="hidden";
 }
 document.getElementById("modal-close").addEventListener("click", closeModal);
@@ -46,13 +50,14 @@ function closeModal() {
   document.getElementsByTagName("BODY")[0].style.overflow="visible";
 }
 
-//Hide form once user submits
+//Hide form once user submits and show thank-you note
 function hideForm() {
   document.getElementById("myForm").style.display = "none";
+  document.getElementById("email-confirmation").innerHTML = emailValue;
   document.getElementById("thank-you").style.display = "block";
 }
 
-//activate flickity. if flickity is unavaiable, .slide-show will remain hidden.
+//activate flickity (for slideshow)
 $(document).ready(function(){
   // $('.slide-show').css("display", "block")
   $('.slide-show').flickity({
