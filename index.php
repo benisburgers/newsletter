@@ -51,6 +51,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/newstyle.css">
+
+  <link rel="stylesheet" href="js/flickity.pkgd.min.js">
 </head>
 
 <body>
@@ -190,13 +192,24 @@
               <input type="checkbox" name="checkbox" id="checkbox-invisible">
               <label for="checkbox-invisible">
                 <img src="img/checkbox_check.svg" alt="checkbox" id="checkbox-visible">
-                <span>Ich bin mit den <a href="#">Teilnahmebedingungen</a> einverstanden</span>
+                <span>Ich bin mit den <button type="button" name="modal-open" class="modal-open" id="modal-open">Teilnahmebedingungen</button> einverstanden</span>
               </label>
             </div>
             <div class="submit">
               <input type="submit" value="Jetzt Mitmachen" id="ajaxButton"/>
             </div>
           </form>
+          <div class="thank-you" id="thank-you">
+            Sehr geehrter Herr Muster
+            <br><br>
+            Vielen Dank für Ihre Anmeldung.
+            <br><br>
+            Max Muster <br>
+            Im Allmendli 11 <br>
+            8703 Erlenbach <br>
+            max@muster.ch <br>
+            0762322321
+          </div>
         </div>
       </div>
     </section>
@@ -213,20 +226,31 @@
     </section>
   </div>
   <div id="debug"></div>
+  <div class="modal teilnahmebedingungen" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Teilnahmebedingungen</h2>
+        <button type="button" class="modal-close" id="modal-close">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem Ipsum</p>
+      </div>
+    </div>
+  </div>
   <footer>
     <span>Lorem ipsum dolor sit amet</span>
   </footer>
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/validate.js"></script>
-  <script src="js/lightslider.js"></script>
-  <script type="text/javascript">
-</script>
-
-
+  <script src="js/flickity.pkgd.min.js"></script>
+  
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     // event listener for form submit

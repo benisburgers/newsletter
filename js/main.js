@@ -31,5 +31,23 @@ function makeRequest(isValid) {
 
     httpRequest.open("POST","updateuser.php", true);
     httpRequest.send(new FormData(formElement));
+    hideForm();
   }
+}
+
+document.getElementById("modal-open").addEventListener("click", openModal);
+function openModal() {
+  document.getElementById("modal").style.display = "block";
+  document.getElementsByTagName("BODY")[0].style.overflow="hidden";
+}
+
+document.getElementById("modal-close").addEventListener("click", closeModal);
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+  document.getElementsByTagName("BODY")[0].style.overflow="visible";
+}
+
+function hideForm() {
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("thank-you").style.display = "block";
 }
