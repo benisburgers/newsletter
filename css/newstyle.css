@@ -20,6 +20,7 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: black;
   color: white;
@@ -50,12 +51,7 @@ header .logo.left span {
   }
 }
 header .logo.right {
-  height: 20px;
-}
-@media (min-width: 576px) {
-  header .logo.right {
-    height: 35px;
-  }
+  height: 25px;
 }
 @media (min-width: 768px) {
   header .logo.right {
@@ -513,12 +509,24 @@ input, textarea {
 
 .logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 @media (min-width: 768px) {
   .logos {
     justify-content: space-around;
   }
+}
+.logos .logo {
+  max-height: 72px;
+}
+@media (min-width: 768px) {
+  .logos .logo {
+    max-height: 98px;
+  }
+}
+.logos .logo img {
+  height: 100%;
 }
 
 footer {
