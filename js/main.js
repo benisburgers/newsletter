@@ -3,8 +3,8 @@ var emailValue;
 // function to execute on click
 function makeRequest(isValid) {
   //access entered email value for confirmation
-  emailValue = document.getElementById('email').value
   if(isValid) {
+    emailValue = document.getElementById('email').value
     // declare form element
     var formElement = document.getElementById("myForm");
 
