@@ -267,7 +267,6 @@
   <script src="js/validate.js"></script>
   <script src="js/flickity.pkgd.min.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     // event listener for form submit
     document.getElementById("ajaxButton").addEventListener('click', function(e) {

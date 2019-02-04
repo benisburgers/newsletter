@@ -33,21 +33,19 @@
         echo "There was a problem with your submission, please try again.";
 	}
 
-	$isSaved = false;
-
 	// database connection
-    // $dbHost = 'localhost';
-    // $dbUser = 'root';
-    // $dbPass = 'root';
-    // $dbName = 'contest';
-    // $participantTable = 'participant';
+    $dbHost = 'localhost';
+    $dbUser = 'root';
+    $dbPass = 'root';
+    $dbName = 'contest';
+    $participantTable = 'participant';
 
     // server
-    $dbHost = 'localhost';
-    $dbUser = 'bin-nl';
-    $dbPass = 'S4qpy6$5';
-    $dbName = 'bin_nl_';
-    $participantTable = 'participant';
+    // $dbHost = 'localhost';
+    // $dbUser = 'bin-nl';
+    // $dbPass = 'S4qpy6$5';
+    // $dbName = 'bin_nl_';
+    // $participantTable = 'participant';
 
     // connect database
     $con = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
@@ -114,25 +112,15 @@
 
     // update database
     if ($con->multi_query($sql)) {
-    	mailHandler();
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($con);
-    }
-
-    // close connection
-    $con->close();
-
-
-	//  send notification mail to participant
-    // only process POST reqeusts.
-    function mailHandler() {
-	    // Check that data was sent to the mailer.
+    	//  send notification mail to participant
+    	// Check that data was sent to the mailer.
         if ( !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Oops! There was a problem with your submission. Please complete the form and try again.";
             exit;
+        } else {
+        	echo "not bad";
         }
 
         // Set the recipient email address.
@@ -166,5 +154,11 @@
             http_response_code(500);
             echo "Oops! Something went wrong and we couldn't send your message.";
         }
-	}
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($con);
+    }
+
+    // close connection
+    $con->close();
  ?>
