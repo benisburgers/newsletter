@@ -84,10 +84,10 @@
     <section class="introduction side-margin">
       <p class="strong">
         <?php if ($salutation && $lastname) {echo $salutation . " " . $lastname . "<br /><br />";} ?>
-        Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister <a href="#">Patrick Küng</a> höchstpersönlich die perfekte Kurventechnik.
+        Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide. Dabei lernen Sie vom Ex-Skirennfahrprofi und Weltmeister <a href="#">Patrick Küng</a> höchstpersönlich die perfekte Kurventechnik.
       </p>
       <p>
-        Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der <a href="#">Motta-Hütte</a>. Unser Partnerbetrieb am Sonnenhang der Lenzerheid gehört zu den zehn besten Skihütten der Schweiz.
+        Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der <a href="#">Motta-Hütte</a>. Unser Partnerbetrieb am Sonnenhang der Lenzerheid gehört zu den zehn besten Skihütten der Schweiz.
       </p>
       <p>
         Das Restaurant mit 14 Gault-Millau Punkten serviert Ihnen am 6. März ein exquisites Alpengourmet-Menu und verwöhnt Sie mit einer Degustation edler Weine.
@@ -137,11 +137,11 @@
         </div>
         <div class="time two">
           <h3>9.45-13.30</h3>
-          <p>Skifahren mit Weltmeister <a href="#">Patrick Küng</a></p>
+          <p>Skifahren mit Weltmeister <a href="#">Patrick Kü̈ng</a></p>
         </div>
         <div class="time three">
           <h3>13.30 – 17.00</h3>
-          <p>Gaumenschmaus in der <a href="#">Motta-Hütte</a> und Degustation erlesener Weine</p>
+          <p>Gaumenschmaus in der <a href="#">Motta-Hü̈tte</a> und Degustation erlesener Weine</p>
         </div>
         <div class="time four">
           <h3>ab 17.00</h3>
@@ -156,7 +156,7 @@
       <h2>Teilnahme</h2>
       <div class="body">
         <div class="info">
-          <p>Machen Sie mit und mit etwas Glück erleben Sie und Ihre Begleitung am 6. März ein
+          <p>Machen Sie mit und mit etwas Glück erleben Sie und Ihre Begleitung am 6. März ein
           unvergessliches Abenteuer im Wert von über 2’000 Franken pro Paar. Teilnahmeschluss
           ist der 20. Februar 2019.</p>
           <p>Wir drücken Ihnen die Daumen.</p>
