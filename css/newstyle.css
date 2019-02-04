@@ -564,5 +564,11 @@ footer {
   color: #ABABAB;
   display: block;
 }
+.slide-show .flickity-button {
+  display: none;
+}
+.slide-show .flickity-page-dots {
+  display: none;
+}
 
 /*# sourceMappingURL=newstyle.css.map */

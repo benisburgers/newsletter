@@ -202,17 +202,17 @@
 
             <div class="text-area">
               <label for="message">Bemerkungsfeld</label>
-              <textarea cols="40" rows="8" name="message" id="message"></textarea>
+              <textarea type="text" cols="40" rows="8" name="message" id="message" tabindex="1"></textarea>
             </div>
             <div class="terms">
               <input type="checkbox" name="checkbox" id="checkbox-invisible">
               <label for="checkbox-invisible">
-                <img src="img/checkbox_check.svg" alt="checkbox" id="checkbox-visible">
-                <span class="small">Ich bin mit den <button type="button" name="modal-open" class="modal-open" id="modal-open">Teilnahmebedingungen</button> einverstanden</span>
+                <img src="img/checkbox_check.svg" alt="checkbox" id="checkbox-visible" tabindex="1">
+                <span class="small">Ich bin mit den <button type="button" name="modal-open" class="modal-open" id="modal-open" tabindex="1">Teilnahmebedingungen</button> einverstanden</span>
               </label>
             </div>
             <div class="submit">
-              <input type="submit" value="Jetzt mitmachen" id="ajaxButton"/>
+              <input type="submit" value="Jetzt mitmachen" id="ajaxButton" tabindex="1"/>
             </div>
           </form>
           <div class="thank-you" id="thank-you">
