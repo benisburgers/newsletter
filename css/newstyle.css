@@ -49,6 +49,9 @@ header .logo.left span {
     font-size: 34px;
   }
 }
+header .logo.right img {
+  height: 100%;
+}
 
 section {
   margin-bottom: 80px;

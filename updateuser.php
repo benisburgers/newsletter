@@ -33,11 +33,11 @@
 	$isSaved = false;
 
 	// database connection
-    $dbHost = 'localhost';
-    $dbUser = 'root';
-    $dbPass = 'root'; // S4qpy6$5
-    $dbName = 'test2';
-    $participantTable = 'participant';
+    // $dbHost = 'localhost';
+    // $dbUser = 'root';
+    // $dbPass = 'root';
+    // $dbName = 'contest';
+    // $participantTable = 'participant';
 
     // server
     $dbHost = 'localhost';
@@ -73,7 +73,7 @@
     	message TEXT(400) NOT NULL,
     	date_created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     	last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-    );";
+    ) CHARACTER SET=utf8;";
 
  //    $sql .= "REPLACE INTO $participantTable
 	// 	(firstname, lastname, street, zip, place, email, phone, message)
