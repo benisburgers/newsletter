@@ -114,7 +114,7 @@
 
     // update database
     if ($con->multi_query($sql)) {
-    	//mailHandler();
+    	mailHandler();
         echo "New record created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($con);
