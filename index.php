@@ -212,7 +212,7 @@
               </label>
             </div>
             <div class="submit">
-              <input type="submit" value="Jetzt mitmachen" id="ajaxButton" tabindex="1"/>
+              <input type="submit" value="JETZT MITMACHEN" id="ajaxButton" tabindex="1"/>
             </div>
           </form>
           <div class="thank-you" id="thank-you">

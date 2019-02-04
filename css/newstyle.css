@@ -61,26 +61,35 @@ section {
 
 p {
   font-size: 17px;
-  line-height: 22px;
+  line-height: 23px;
 }
 
 h1 {
   font-size: 16px;
+  line-height: 20px;
   font-weight: bold;
 }
 
 h2 {
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
 }
 
 h3 {
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
+}
+@media (min-width: 992px) {
+  h3 {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 label, .small {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
 }
 
@@ -97,12 +106,12 @@ input, textarea {
 
 @media (min-width: 992px) {
   p {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 25px;
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   h2 {
@@ -463,6 +472,7 @@ input, textarea {
 .sign-up .interactive form .submit input {
   width: 100%;
   font-size: 16px;
+  line-height: 20px;
   font-weight: bold;
   color: #FFFFFF;
   background-color: #D8D8D8;
@@ -477,7 +487,8 @@ input, textarea {
 }
 @media (min-width: 992px) {
   .sign-up .interactive form .submit input {
-    font-size: 18px;
+    font-size: 19px;
+    line-height: 23px;
   }
 }
 .sign-up .interactive form .submit input.activated {

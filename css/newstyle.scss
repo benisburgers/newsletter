@@ -75,22 +75,29 @@ section {
 }
 p {
   font-size: 17px;
-  line-height: 22px;
+  line-height: 23px;
 }
 h1 {
   font-size: 16px;
+  line-height: 20px; 
   font-weight: bold;
 }
 h2 {
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
 }
 h3 {
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
+  @media(min-width: $large-device) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 label, .small {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
 }
 a {
@@ -104,11 +111,11 @@ input,textarea {
 }
 @media(min-width: $large-device) {
   p {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 25px;
   }
   h1 {
-    font-size: 18px;
+    font-size: 19px;
   }
   h2 {
     font-size: 28px;
@@ -415,6 +422,7 @@ input,textarea {
         input {
           width: 100%;
           font-size: 16px;
+          line-height: 20px;
           font-weight: bold;
           color: #FFFFFF;
           background-color: #D8D8D8;
@@ -425,7 +433,8 @@ input,textarea {
             width: 221px
           }
           @media(min-width: $large-device) {
-            font-size: 18px;
+            font-size: 19px;
+            line-height: 23px;
           }
           &.activated {
             background-color: #1C69D4;
