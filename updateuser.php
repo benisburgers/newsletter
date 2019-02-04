@@ -39,6 +39,13 @@
     $dbName = 'test2';
     $participantTable = 'participant';
 
+    // server
+    $dbHost = 'localhost';
+    $dbUser = 'bin-nl';
+    $dbPass = 'S4qpy6$5';
+    $dbName = 'bin_nl_';
+    $participantTable = 'participant';
+
     // connect database
     $con = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
 
