@@ -35,7 +35,7 @@
 	// database connection
     $dbHost = 'localhost';
     $dbUser = 'root';
-    $dbPass = 'root';
+    $dbPass = 'root'; // S4qpy6$5
     $dbName = 'contest';
     $participantTable = 'participant';
 
@@ -53,33 +53,53 @@
 
     $added_on = date('Y-m-d G:i:s');
 
-    // initialize table
+    // initialize table if not exists
     $sql = "CREATE TABLE IF NOT EXISTS $participantTable (
-    	id INT(6) AUTO_INCREMENT,
+    	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     	firstname VARCHAR(30) NOT NULL,
     	lastname VARCHAR(30) NOT NULL,
     	street VARCHAR(30) NOT NULL,
     	zip SMALLINT(5) NOT NULL,
     	place VARCHAR(30) NOT NULL,
-    	email VARCHAR(50) UNSIGNED PRIMARY KEY,
+    	email VARCHAR(50) NOT NULL UNIQUE,
     	phone INT(20) NOT NULL,
     	message TEXT(400) NOT NULL,
-    	date_created TIMESTAMP,
-    	last_update TIMESTAMP
+    	date_created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    	last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     );";
 
-    $sql .= "REPLACE INTO $participantTable
-		(firstname, lastname, street, zip, place, email, phone, message)
-	VALUES
-		('$firstname', '$lastname', '$street', '$zip', '$place', '$email', '$phone', '$message')";
+ //    $sql .= "REPLACE INTO $participantTable
+	// 	(firstname, lastname, street, zip, place, email, phone, message)
+	// VALUES
+	// 	('$firstname', '$lastname', '$street', '$zip', '$place', '$email', '$phone', '$message')";
 
-	// $sql .= "INSERT INTO $participantTable (email) VALUES ($email)
- //  ON DUPLICATE KEY UPDATE firstname=$firstname;";
-
- //    $sql .= "INSERT INTO $participantTable (email)
-	// VALUES ($email)
-	// ON DUPLICATE KEY UPDATE
-	// 	firstname = $firstname";
+    // save new record or update if email exists already
+	$sql .= "INSERT INTO $participantTable (
+		firstname,
+		lastname,
+		street,
+		zip,
+		place,
+		email,
+		phone,
+		message) VALUES (
+		'$firstname',
+		'$lastname',
+		'$street',
+		'$zip',
+		'$place',
+		'$email',
+		'$phone',
+		'$message')
+  	ON DUPLICATE KEY UPDATE
+  		firstname='$firstname',
+  		lastname='$lastname',
+  		street='$street',
+  		zip='$zip',
+  		place='$place',
+  		phone='$phone',
+  		message='$message',
+  		last_update=CURRENT_TIMESTAMP;";
 
     // update database
     if ($con->multi_query($sql)) {

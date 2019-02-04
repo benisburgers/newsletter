@@ -1,7 +1,6 @@
 // function to execute on click
 function makeRequest(isValid) {
   if(isValid) {
-    console.log('makeRequest');
     // declare form element
     var formElement = document.getElementById("myForm");
 
