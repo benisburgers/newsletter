@@ -1,4 +1,7 @@
 <?php
+	// define content type
+	header('Content-type: text/html; charset=utf-8');
+	
     // store form data
     // only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
