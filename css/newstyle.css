@@ -93,6 +93,7 @@ input, textarea {
 @media (min-width: 992px) {
   p {
     font-size: 18px;
+    line-height: 25px;
   }
 
   h1 {
@@ -174,6 +175,7 @@ input, textarea {
 @media (min-width: 992px) {
   .start .title .intro-header {
     font-size: 34px;
+    line-height: 40px;
   }
 }
 @media (min-width: 768px) {

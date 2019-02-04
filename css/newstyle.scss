@@ -102,6 +102,7 @@ input,textarea {
 @media(min-width: $large-device) {
   p {
     font-size: 18px;
+    line-height: 25px;
   }
   h1 {
     font-size: 18px;
@@ -164,6 +165,7 @@ input,textarea {
       }
       @media(min-width: $large-device) {
         font-size: 34px;
+        line-height: 40px;
       }
     }
   }
