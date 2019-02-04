@@ -17,12 +17,12 @@
 
 		$place = strip_tags(trim($_POST["place"]));
 		$place = str_replace(array("\r", "\n"), array(" ", " "), $place);
-	    
+
 	    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
 
 	    $phone = strip_tags(trim($_POST["phone"]));
 		$phone = str_replace(array("\r", "\n"), array(" ", " "), $phone);
-	    
+
 	    $message = trim($_POST["message"]);
 	} else {
         // Not a POST request, set a 403 (forbidden) response code.
@@ -111,7 +111,7 @@
         $subject = "Teilnahme für Binelli Group Wettbewerb";
 
         // Build confirm-email content.
-        $email_content = "Vielen Dank für die Teilnahme. Wir melden uns bei Ihnen, falls Sie Glück haben. Nachfolgend nochmals Ihre Anschrift, die wir in unserer Datenbank zur Auswertung in diesem Moment abspeichern. Die Speicherung ist nur temporär. Nach dem Wettbewerb löschen wir diese Daten wieder vollständig von unserem Server und schicken Ihnen eine Löschungsbestätigung. 
+        $email_content = "Vielen Dank für die Teilnahme. Wir melden uns bei Ihnen, falls Sie Glück haben. Nachfolgend nochmals Ihre Anschrift, die wir in unserer Datenbank zur Auswertung in diesem Moment abspeichern. Die Speicherung ist nur temporär. Nach dem Wettbewerb löschen wir diese Daten wieder vollständig von unserem Server und schicken Ihnen eine Löschungsbestätigung.
         	\n\nIhr Binelli Team\n\n";
         $email_content .= "Name: $firstname $lastname\n";
         $email_content .= "Strasse: $street\n";

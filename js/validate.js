@@ -41,15 +41,6 @@ $(document).ready(function(){
       }
     }
 
-    function checkMandatory() {
-      if (checkBox(firstname) & checkBox(lastname) & checkBox(email) & checkBox(phone) & termsChecked) {
-        return true;
-      }
-      else {
-        return false;
-      }
-    }
-
     //CHECK ADDRESSES
     function checkAddress() {
       //if all address fields (street, zip, place) are left empty ==> Return true
@@ -127,5 +118,16 @@ $(document).ready(function(){
         return false;
       }
     }
+
+    //checkMandatory() MUST REMAIN AT BOTTOM OF SCRIPT!!!
+    function checkMandatory() {
+      if (checkBox(firstname) & checkBox(lastname) & checkBox(email) & checkBox(phone) & termsChecked) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+    checkMandatory();
 
 });

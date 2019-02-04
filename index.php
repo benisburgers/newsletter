@@ -97,34 +97,34 @@
     <section class="images side-margin">
       <div class="column motta">
         <img src="img/motta.jpg" alt="Motta Hütte">
-        <span class="strong">Motta Hütte</span>
-        <span>Copyright: Lorem Ipsum</span>
+        <span class="strong small">Motta Hütte</span>
+        <span class="small">Copyright: Lorem Ipsum</span>
       </div>
       <div class="column ski">
         <img src="img/skifahrer.jpg" alt="Motta Hütte">
-        <span class="strong">Patrick Küng</span>
-        <span>Copyright: Lorem Ipsum</span>
+        <span class="strong small">Patrick Küng</span>
+        <span class="small">Copyright: Lorem Ipsum</span>
       </div>
       <div class="column hotel">
         <img src="img/hotel.jpg" alt="Motta Hütte">
-        <span class="strong">Sheraton 5* Hotel</span>
-        <span>Copyright: Lorem Ipsum</span>
+        <span class="strong small">Sheraton 5* Hotel</span>
+        <span class="small">Copyright: Lorem Ipsum</span>
       </div>
     </section>
     <section class="slide-show slideshow side-margin">
       <div class="gallery-cell">
         <img src="img/motta.jpg" alt="Motta Hütte">
-        <span class="strong">Motta Hütte</span>
-        <span>Copyright: Lorem Ipsum</span>
+        <span class="strong small">Motta Hütte</span>
+        <span class="small">Copyright: Lorem Ipsum</span>
       </div>
       <div class="gallery-cell">
         <img src="img/skifahrer.jpg" alt="Motta Hütte">
-        <span class="strong">Patrick Küng</span>
-        <span>Copyright: Lorem Ipsum</span>      </div>
+        <span class="strong small">Patrick Küng</span>
+        <span class="small">Copyright: Lorem Ipsum</span>      </div>
       <div class="gallery-cell">
         <img src="img/hotel.jpg" alt="Motta Hütte">
-        <span class="strong">Sheraton 5* Hotel</span>
-        <span>Copyright: Lorem Ipsum</span>
+        <span class="strong small">Sheraton 5* Hotel</span>
+        <span class="small">Copyright: Lorem Ipsum</span>
       </div>
     </section>
     <section class="program side-margin">
@@ -208,7 +208,7 @@
               <input type="checkbox" name="checkbox" id="checkbox-invisible">
               <label for="checkbox-invisible">
                 <img src="img/checkbox_check.svg" alt="checkbox" id="checkbox-visible">
-                <span>Ich bin mit den <button type="button" name="modal-open" class="modal-open" id="modal-open">Teilnahmebedingungen</button> einverstanden</span>
+                <span class="small">Ich bin mit den <button type="button" name="modal-open" class="modal-open" id="modal-open">Teilnahmebedingungen</button> einverstanden</span>
               </label>
             </div>
             <div class="submit">
@@ -216,15 +216,13 @@
             </div>
           </form>
           <div class="thank-you" id="thank-you">
-            Sehr geehrter Herr Muster
-            <br><br>
-            Vielen Dank für Ihre Anmeldung.
-            <br><br>
-            Max Muster <br>
-            Im Allmendli 11 <br>
-            8703 Erlenbach <br>
-            max@muster.ch <br>
-            0762322321
+            <p>
+              Vielen Dank für Ihre Anmeldung.
+            </p>
+            <br/><br/>
+            <p>
+              Sie erhalten gleich eine Bestätigungsemail an <span class="email">max-muster@gmail.com</span>.
+            </p>
           </div>
         </div>
       </div>
@@ -256,7 +254,7 @@
     </div>
   </div>
   <footer>
-    <span>Lorem ipsum dolor sit amet</span>
+    <span class="small">Lorem ipsum dolor sit amet</span>
   </footer>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
