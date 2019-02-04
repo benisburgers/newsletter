@@ -61,6 +61,9 @@ header {
     span {
       font-weight: bold;
       font-size: 21px;
+      @media(min-width: $medium-device) {
+        font-size: 34px;
+      }
     }
   }
 }

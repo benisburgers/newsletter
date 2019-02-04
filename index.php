@@ -221,7 +221,7 @@
             </p>
             <br/><br/>
             <p>
-              Sie erhalten gleich eine Bestätigungsemail an <span class="email">max-muster@gmail.com</span>.
+              Sie erhalten gleich eine Bestätigungsemail an <span id="email-confirmation"></span>.
             </p>
           </div>
         </div>
