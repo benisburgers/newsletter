@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
   var firstname = $("#firstname"),
       lastname = $("#lastname"),
       street = $("#street")
@@ -37,15 +38,6 @@ $(document).ready(function(){
       else {
         $('#ajaxButton').removeClass("activated");
         valid = false;
-      }
-    }
-
-    function checkMandatory() {
-      if (checkBox(firstname) & checkBox(lastname) & checkBox(email) & checkBox(phone) & termsChecked) {
-        return true;
-      }
-      else {
-        return false;
       }
     }
 
@@ -126,5 +118,16 @@ $(document).ready(function(){
         return false;
       }
     }
+
+    //checkMandatory() MUST REMAIN AT BOTTOM OF SCRIPT!!!
+    function checkMandatory() {
+      if (checkBox(firstname) & checkBox(lastname) & checkBox(email) & checkBox(phone) & termsChecked) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+    checkMandatory();
 
 });

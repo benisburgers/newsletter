@@ -24,9 +24,23 @@ header {
   background-color: black;
   color: white;
   margin-bottom: 30px;
-  padding: 0 3.33%;
+  padding: 0 15px;
   height: 77px;
   align-items: center;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    padding: 0 50px;
+  }
+}
+header .logo.left span {
+  font-weight: bold;
+  font-size: 21px;
 }
 
 section {
@@ -57,7 +71,7 @@ h3 {
   font-weight: bold;
 }
 
-label, span {
+label, .small {
   font-size: 13px;
 }
 
@@ -96,14 +110,14 @@ input, textarea {
 }
 @media (min-width: 768px) {
   .main-body {
-    padding-left: 3.33%;
-    padding-right: 3.33%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 .side-margin {
-  margin-left: 3.33%;
-  margin-right: 3.33%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 @media (min-width: 768px) {
   .side-margin {
@@ -124,7 +138,7 @@ input, textarea {
   }
 }
 .start .title {
-  flex: 1;
+  flex-basis: calc(33%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -157,11 +171,18 @@ input, textarea {
     font-size: 34px;
   }
 }
-.start .image-container {
-  flex: 2;
+@media (min-width: 768px) {
+  .start .image-container {
+    flex-basis: calc(66% + 20px);
+  }
+}
+@media (min-width: 992px) {
+  .start .image-container {
+    flex-basis: calc(66% + 30px);
+  }
 }
 .start .image-container img {
-  max-width: 100%;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .start .image-container img {
@@ -179,9 +200,8 @@ input, textarea {
   }
 }
 .introduction p {
-  flex: 1;
+  flex-basis: calc(33%);
   margin: 0 0 30px;
-  text-align: justify;
 }
 @media (min-width: 768px) {
   .introduction p {
@@ -199,11 +219,22 @@ input, textarea {
 }
 
 .images {
-  display: flex;
-  overflow: scroll;
+  display: none;
+}
+@media (min-width: 768px) {
+  .images {
+    display: flex;
+  }
 }
 .images .column {
+  flex-basis: calc(33%);
+  min-width: 253px;
   margin-right: 20px;
+}
+@media (min-width: 768px) {
+  .images .column {
+    min-width: 0;
+  }
 }
 @media (min-width: 992px) {
   .images .column {
@@ -215,20 +246,12 @@ input, textarea {
 }
 .images img {
   width: 100%;
-  min-width: 253px;
   margin-bottom: 10px;
   border-radius: 5px;
 }
 .images span {
   color: #ABABAB;
   display: block;
-}
-
-.image-gallery li {
-  width: 253px;
-}
-.image-gallery img {
-  width: 253px;
 }
 
 .program h2 {
@@ -244,7 +267,7 @@ input, textarea {
   }
 }
 .program .times .time {
-  flex: 1;
+  flex-basis: calc(25%);
 }
 @media (min-width: 768px) {
   .program .times .time {
@@ -283,7 +306,7 @@ input, textarea {
   }
 }
 .sign-up .info {
-  flex: 1;
+  flex-basis: calc(33%);
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
@@ -303,8 +326,18 @@ input, textarea {
 .sign-up .info p:last-child {
   margin: 0;
 }
-.sign-up .interactive {
-  flex: 2;
+@media (min-width: 768px) {
+  .sign-up .interactive {
+    flex-basis: calc(66% + 20px);
+  }
+}
+@media (min-width: 992px) {
+  .sign-up .interactive {
+    flex-basis: calc(66% + 30px);
+  }
+}
+.sign-up .interactive .thank-you {
+  display: none;
 }
 .sign-up .interactive form {
   display: flex;
@@ -392,6 +425,12 @@ input, textarea {
     align-items: center;
   }
 }
+.sign-up .interactive form .terms .modal-open {
+  color: #1C69D4;
+}
+.sign-up .interactive form .terms .modal-open:hover {
+  cursor: pointer;
+}
 .sign-up .interactive form .terms #checkbox-visible {
   margin-right: 10px;
   width: 20px;
@@ -446,9 +485,74 @@ input, textarea {
 footer {
   display: flex;
   align-items: center;
-  padding: 0 3.33%;
+  padding: 0 15px;
   height: 77px;
   background-color: #D8D8D8;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    padding: 0 50px;
+  }
+}
+
+.teilnahmebedingungen {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(28, 105, 212, 0.5);
+}
+.teilnahmebedingungen .modal-content {
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 768px;
+  background: white;
+  padding: 30px;
+}
+.teilnahmebedingungen .modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+.teilnahmebedingungen .modal-header .modal-close {
+  border: 0;
+  background: none;
+}
+.teilnahmebedingungen .modal-header .modal-close:hover {
+  cursor: pointer;
+  color: #1C69D4;
+}
+.teilnahmebedingungen .modal-header .modal-close span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .slide-show {
+    display: none;
+  }
+}
+.slide-show .gallery-cell {
+  width: 253px;
+  margin-right: 20px;
+}
+.slide-show .gallery-cell img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.slide-show .gallery-cell span {
+  color: #ABABAB;
+  display: block;
 }
 
 /*# sourceMappingURL=newstyle.css.map */
