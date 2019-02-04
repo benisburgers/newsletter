@@ -137,11 +137,11 @@
         </div>
         <div class="time two">
           <h3>9.45-13.30</h3>
-          <p>Skifahren mit Weltmeister <a href="#">Patrick Kü̈ng</a></p>
+          <p>Skifahren mit Weltmeister <a href="#">Patrick Küng</a></p>
         </div>
         <div class="time three">
           <h3>13.30 – 17.00</h3>
-          <p>Gaumenschmaus in der <a href="#">Motta-Hü̈tte</a> und Degustation erlesener Weine</p>
+          <p>Gaumenschmaus in der <a href="#">Motta-Hütte</a> und Degustation erlesener Weine</p>
         </div>
         <div class="time four">
           <h3>ab 17.00</h3>
