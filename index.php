@@ -66,7 +66,7 @@
       <span>Binelli Group</span>
     </div>
     <div class="logo right">
-      <img src="img/Binelli-group_markenlogos_nach-CI_rgb.png" alt="binelli logos">
+      <img src="img/Binelli-group_markenlogos.png" alt="binelli logos">
     </div>
   </header>
   <div class="main-body">

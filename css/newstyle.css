@@ -50,7 +50,17 @@ header .logo.left span {
   }
 }
 header .logo.right {
-  height: 100%;
+  height: 20px;
+}
+@media (min-width: 576px) {
+  header .logo.right {
+    height: 35px;
+  }
+}
+@media (min-width: 768px) {
+  header .logo.right {
+    height: 38px;
+  }
 }
 header .logo.right img {
   height: 100%;
