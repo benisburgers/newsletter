@@ -464,9 +464,11 @@ input,textarea {
     justify-content: space-around;
   }
   .logo {
-    max-height: 72px;
+    max-height:  72px;
+    max-width: 72px;
     @media(min-width: $medium-device) {
       max-height: 98px;
+      max-width: 98px;
     }
     img {
       height: 100%;

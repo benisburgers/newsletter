@@ -519,10 +519,12 @@ input, textarea {
 }
 .logos .logo {
   max-height: 72px;
+  max-width: 72px;
 }
 @media (min-width: 768px) {
   .logos .logo {
     max-height: 98px;
+    max-width: 98px;
   }
 }
 .logos .logo img {
