@@ -119,8 +119,6 @@
             http_response_code(400);
             echo "Oops! There was a problem with your submission. Please complete the form and try again.";
             exit;
-        } else {
-        	echo "not bad";
         }
 
         // Set the recipient email address.
