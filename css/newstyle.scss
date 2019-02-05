@@ -413,6 +413,8 @@ input,textarea {
           border: 1px solid #1C69D4;
           border-radius: 3px;
           background-color: #FCFCFC;
+          display: inline;
+          pointer-events: none;
         }
         #checkbox-invisible {
           display: none;
@@ -428,6 +430,12 @@ input,textarea {
       }
       .submit {
         flex-basis: 100%;
+        @media(min-width: $small-device) {
+          flex-basis: calc(50% - (#{$medium-margin-right} / 2));
+        }
+        @media(min-width: $large-device) {
+          flex-basis: calc(50% - (#{$large-margin-right} / 2));
+        }
         input {
           width: 100%;
           font-size: 17px;
@@ -439,9 +447,6 @@ input,textarea {
           border-radius: 3px;
           border: none;
           padding: 13px 0;
-          @media(min-width: $medium-device) {
-            width: 221px
-          }
           @media(min-width: $large-device) {
             font-size: 19px;
             line-height: 23px;

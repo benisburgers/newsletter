@@ -467,6 +467,8 @@ input, textarea {
   border: 1px solid #1C69D4;
   border-radius: 3px;
   background-color: #FCFCFC;
+  display: inline;
+  pointer-events: none;
 }
 .sign-up .interactive form .terms #checkbox-invisible {
   display: none;
@@ -477,6 +479,16 @@ input, textarea {
 }
 .sign-up .interactive form .submit {
   flex-basis: 100%;
+}
+@media (min-width: 576px) {
+  .sign-up .interactive form .submit {
+    flex-basis: calc(50% - (20px / 2));
+  }
+}
+@media (min-width: 992px) {
+  .sign-up .interactive form .submit {
+    flex-basis: calc(50% - (30px / 2));
+  }
 }
 .sign-up .interactive form .submit input {
   width: 100%;
@@ -489,11 +501,6 @@ input, textarea {
   border-radius: 3px;
   border: none;
   padding: 13px 0;
-}
-@media (min-width: 768px) {
-  .sign-up .interactive form .submit input {
-    width: 221px;
-  }
 }
 @media (min-width: 992px) {
   .sign-up .interactive form .submit input {

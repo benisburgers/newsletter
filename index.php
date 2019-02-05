@@ -208,7 +208,7 @@
             </div>
             <div class="terms">
               <input type="checkbox" name="checkbox" id="checkbox-invisible">
-              <label for="checkbox-invisible">
+              <label for="checkbox-invisible" class="checkbox-label">
                 <img src="img/checkbox_check.svg" alt="checkbox" id="checkbox-visible" tabindex="1">
                 <span class="small">Ich bin mit den <span class="modal-open" id="modal-open" tabindex="1">Teilnahmebedingungen</span> einverstanden</span>
               </label>
