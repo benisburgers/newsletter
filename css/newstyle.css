@@ -378,6 +378,7 @@ input, textarea {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .sign-up .interactive form .input {
   flex-basis: 100%;
@@ -387,16 +388,10 @@ input, textarea {
   .sign-up .interactive form .input {
     flex-basis: calc(50% - (20px / 2));
   }
-  .sign-up .interactive form .input.left {
-    margin-right: 20px;
-  }
 }
 @media (min-width: 992px) {
   .sign-up .interactive form .input {
     flex-basis: calc(50% - (30px / 2));
-  }
-  .sign-up .interactive form .input.left {
-    margin-right: 30px;
   }
 }
 .sign-up .interactive form .input.location .zip {
@@ -521,13 +516,13 @@ input, textarea {
   }
 }
 .logos .logo {
-  max-height: 72px;
-  max-width: 72px;
+  height: 72px;
+  width: 72px;
 }
 @media (min-width: 768px) {
   .logos .logo {
-    max-height: 98px;
-    max-width: 98px;
+    height: 98px;
+    width: 98px;
   }
 }
 .logos .logo img {

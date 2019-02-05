@@ -332,20 +332,15 @@ input,textarea {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
       .input {
         flex-basis: 100%;
         margin-bottom: 20px;
         @media(min-width: $small-device) {
           flex-basis: calc(50% - (#{$medium-margin-right} / 2));
-          &.left {
-            margin-right: $medium-margin-right;
-          }
         }
         @media(min-width: $large-device) {
           flex-basis: calc(50% - (#{$large-margin-right} / 2));
-          &.left {
-            margin-right: $large-margin-right;
-          }
         }
         &.location {
           .zip {
@@ -467,11 +462,11 @@ input,textarea {
     justify-content: space-around;
   }
   .logo {
-    max-height:  72px;
-    max-width: 72px;
+    height:  72px;
+    width: 72px;
     @media(min-width: $medium-device) {
-      max-height: 98px;
-      max-width: 98px;
+      height: 98px;
+      width: 98px;
     }
     img {
       height: 100%;

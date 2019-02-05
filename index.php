@@ -100,7 +100,7 @@
       <div class="column motta">
         <img src="img/motta.jpg" alt="Motta Hütte">
         <span class="strong small">Motta Hütte</span>
-        <span class="small">Copyright: Lorem Ipsum</span>
+        <span class="small">Cat Copyright: Lorem Ipsum</span>
       </div>
       <div class="column ski">
         <img src="img/skifahrer.jpg" alt="Motta Hütte">
@@ -117,7 +117,7 @@
       <div class="gallery-cell">
         <img src="img/motta.jpg" alt="Motta Hütte">
         <span class="strong small">Motta Hütte</span>
-        <span class="small">Copyright: Lorem Ipsum</span>
+        <span class="small">Dog Copyright: Lorem Ipsum</span>
       </div>
       <div class="gallery-cell">
         <img src="img/skifahrer.jpg" alt="Motta Hütte">
