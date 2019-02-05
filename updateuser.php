@@ -141,7 +141,7 @@
         $email_content .= "Bemerkung:\n$message\n";
 
         // Build the email headers.
-        $email_headers = "From: webmaster@example.com";
+        $email_headers = "From:";
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
