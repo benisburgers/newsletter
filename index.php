@@ -80,7 +80,7 @@
         </p>
       </div>
       <div class="image-container">
-        <img src="img/patrick_kueng.jpg" alt="Patrick Kueng">
+        <img src="img/kuhn-potrait.jpg" alt="Patrick Kueng">
       </div>
     </section>
     <section class="introduction side-margin">
@@ -100,16 +100,16 @@
       <div class="column motta">
         <img src="img/motta.jpg" alt="Motta Hütte">
         <span class="strong small">Motta Hütte</span>
-        <span class="small">Cat Copyright: Lorem Ipsum</span>
+        <span class="small">Copyright: Lorem Ipsum</span>
       </div>
-      <div class="column ski">
-        <img src="img/skifahrer.jpg" alt="Motta Hütte">
-        <span class="strong small">Patrick Küng</span>
+      <div class="column weinkeller">
+        <img src="img/weinkeller.jpg" alt="Weinkeller">
+        <span class="strong small">Weinkeller</span>
         <span class="small">Copyright: Lorem Ipsum</span>
       </div>
       <div class="column hotel">
-        <img src="img/hotel.jpg" alt="Motta Hütte">
-        <span class="strong small">Sheraton 5* Hotel</span>
+        <img src="img/valbella_inn.jpg" alt="Valbella Inn">
+        <span class="strong small">Valbella Inn</span>
         <span class="small">Copyright: Lorem Ipsum</span>
       </div>
     </section>
@@ -117,15 +117,16 @@
       <div class="gallery-cell">
         <img src="img/motta.jpg" alt="Motta Hütte">
         <span class="strong small">Motta Hütte</span>
-        <span class="small">Dog Copyright: Lorem Ipsum</span>
+        <span class="small">Copyright: Lorem Ipsum</span>
       </div>
       <div class="gallery-cell">
-        <img src="img/skifahrer.jpg" alt="Motta Hütte">
-        <span class="strong small">Patrick Küng</span>
-        <span class="small">Copyright: Lorem Ipsum</span>      </div>
+        <img src="img/weinkeller.jpg" alt="Weinkeller">
+        <span class="strong small">Weinkeller</span>
+        <span class="small">Copyright: Lorem Ipsum</span>
+      </div>
       <div class="gallery-cell">
-        <img src="img/hotel.jpg" alt="Motta Hütte">
-        <span class="strong small">Sheraton 5* Hotel</span>
+        <img src="img/valbella_inn.jpg" alt="Valbella Inn">
+        <span class="strong small">Valbella Inn</span>
         <span class="small">Copyright: Lorem Ipsum</span>
       </div>
     </section>
