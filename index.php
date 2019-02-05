@@ -231,7 +231,7 @@
               </p>
               <br>
               <p>
-                Die Gewinner werden am 21. Februar 2019 persönlich via Telefon und E-Mail benachrichtigt.
+                Die Gewinner werden am 21. Februar 2019 persönlich via Telefon und E&#8209;Mail benachrichtigt.
               </p>
               <br>
               <p>
