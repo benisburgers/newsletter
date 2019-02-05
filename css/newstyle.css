@@ -221,7 +221,7 @@ input, textarea {
 }
 @media (min-width: 768px) {
   .start .image-container img {
-    border-radius: 5px;
+    border-radius: 3px;
   }
 }
 
@@ -282,7 +282,7 @@ input, textarea {
 .images img {
   width: 100%;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .images span {
   color: #ABABAB;
@@ -425,6 +425,7 @@ input, textarea {
   box-sizing: border-box;
   display: block;
   height: 34px;
+  padding: 10px;
 }
 .sign-up .interactive form .input input.invalid {
   border: 1px solid #1C69D4;
@@ -435,35 +436,30 @@ input, textarea {
 }
 .sign-up .interactive form .text-area label {
   color: #ABABAB;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 .sign-up .interactive form .text-area textarea {
   width: 100%;
   box-sizing: border-box;
   display: block;
   resize: none;
+  padding: 10px;
 }
 .sign-up .interactive form .terms {
   flex-basis: 100%;
   margin-bottom: 50px;
-}
-.sign-up .interactive form .terms label {
   display: flex;
-  align-items: flex-start;
 }
-@media (min-width: 768px) {
-  .sign-up .interactive form .terms label {
-    align-items: center;
-  }
-}
-.sign-up .interactive form .terms .modal-open {
+.sign-up .interactive form .terms .open-modal {
   color: #1C69D4;
 }
-.sign-up .interactive form .terms .modal-open:hover {
+.sign-up .interactive form .terms .open-modal:hover {
   cursor: pointer;
 }
 .sign-up .interactive form .terms #checkbox-visible {
   margin-right: 10px;
-  width: 20px;
+  width: 18px;
   border: 1px solid #1C69D4;
   border-radius: 3px;
   background-color: #FCFCFC;
@@ -555,42 +551,61 @@ footer {
 }
 
 .teilnahmebedingungen {
-  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
   position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.teilnahmebedingungen .inside-modal {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 .teilnahmebedingungen .modal-content {
-  width: 100%;
-  box-sizing: border-box;
-  max-width: 768px;
   background: white;
-  padding: 15px;
-  margin: 15px;
+  padding: 20px;
+  border-radius: 3px;
+  height: auto;
+  overflow: scroll;
+  max-width: 768px;
+}
+@media (min-width: 768px) {
+  .teilnahmebedingungen .modal-content {
+    padding: 30px;
+  }
 }
 .teilnahmebedingungen .modal-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
-.teilnahmebedingungen .modal-header .modal-close {
+.teilnahmebedingungen .modal-header h2 {
+  margin-top: 50px;
+}
+.teilnahmebedingungen .modal-header .close-modal {
   border: 0;
   background: none;
   color: #1C69D4;
 }
-.teilnahmebedingungen .modal-header .modal-close:hover, .teilnahmebedingungen .modal-header .modal-close :active {
+.teilnahmebedingungen .modal-header .close-modal:hover, .teilnahmebedingungen .modal-header .close-modal :active {
   cursor: pointer;
   color: black;
 }
-.teilnahmebedingungen .modal-header .modal-close span {
+.teilnahmebedingungen .modal-header .close-modal span {
   font-size: 25px;
   font-weight: bold;
+}
+
+.modal-open {
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -605,7 +620,7 @@ footer {
 .slide-show .gallery-cell img {
   width: 100%;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .slide-show .gallery-cell span {
   color: #ABABAB;

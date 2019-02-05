@@ -1,10 +1,7 @@
-//create global value to access later
-var emailValue;
 // function to execute on click
 function makeRequest(isValid) {
   //access entered email value for confirmation
   if(isValid) {
-    emailValue = document.getElementById('email').value
     // declare form element
     var formElement = document.getElementById("myForm");
 
@@ -39,21 +36,20 @@ function makeRequest(isValid) {
 }
 
 //Open and close modal
-document.getElementById("modal-open").addEventListener("click", openModal);
+document.getElementById("open-modal").addEventListener("click", openModal);
 function openModal() {
-  document.getElementById("modal").style.display = "flex";
-  document.getElementsByTagName("BODY")[0].style.overflow="hidden";
+  document.getElementById("modal").style.display = "block";
+  document.getElementsByTagName("BODY")[0].classList.add("modal-open");
 }
-document.getElementById("modal-close").addEventListener("click", closeModal);
+document.getElementById("close-modal").addEventListener("click", closeModal);
 function closeModal() {
   document.getElementById("modal").style.display = "none";
-  document.getElementsByTagName("BODY")[0].style.overflow="visible";
+  document.getElementsByTagName("BODY")[0].classList.remove("modal-open");
 }
 
 //Hide form once user submits and show thank-you note
 function hideForm() {
   document.getElementById("myForm").style.display = "none";
-  document.getElementById("email-confirmation").innerHTML = emailValue;
   document.getElementById("thank-you").style.display = "block";
 }
 

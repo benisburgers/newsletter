@@ -203,7 +203,7 @@ input,textarea {
     img {
       width: 100%;
       @media(min-width: $medium-device) {
-        border-radius: 5px;
+        border-radius: 3px;
       }
     }
   }
@@ -251,7 +251,7 @@ input,textarea {
   img {
     width: 100%;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
   }
   span {
     color: #ABABAB;
@@ -376,6 +376,7 @@ input,textarea {
             border: 1px solid #1C69D4;
           }
           height: 34px;
+          padding: 10px;
         }
       }
       .text-area {
@@ -383,25 +384,22 @@ input,textarea {
         margin-bottom: 30px;
         label {
           color: #ABABAB;
+          margin-bottom: 10px;
+          display: inline-block;
         }
         textarea {
           width: 100%;
           box-sizing: border-box;
           display: block;
           resize: none;
+          padding: 10px;
         }
       }
       .terms {
         flex-basis: 100%;
         margin-bottom: 50px;
-        label {
-          display: flex;
-          align-items: flex-start;
-          @media(min-width: $medium-device) {
-            align-items: center;
-          }
-        }
-        .modal-open {
+        display: flex;
+        .open-modal {
           color: #1C69D4;
           &:hover {
             cursor: pointer;
@@ -409,7 +407,7 @@ input,textarea {
         }
         #checkbox-visible {
           margin-right: 10px;
-          width: 20px;
+          width: 18px;
           border: 1px solid #1C69D4;
           border-radius: 3px;
           background-color: #FCFCFC;
@@ -493,29 +491,42 @@ footer {
 }
 //modal
 .teilnahmebedingungen {
-  display: none;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+  width: 100vw;
+  box-sizing: border-box;
+  .inside-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
   .modal-content {
-    width: 100%;
-    box-sizing: border-box;
-    max-width: $medium-device;
     background: white;
-    padding: 15px;
-    margin: 15px;
+    padding: 20px;
+    @media(min-width: $medium-device) {
+      padding: 30px;
+    }
+    border-radius: 3px;
+    height: auto;
+    overflow: scroll;
+    max-width: $medium-device;
   }
   .modal-header {
     display: flex;
     justify-content: space-between;
-    .modal-close {
+    align-items: flex-start;
+    h2 {
+      margin-top: 50px;
+    }
+    .close-modal {
       border: 0;
       background: none;
       color: #1C69D4;
@@ -530,6 +541,9 @@ footer {
     }
   }
 }
+.modal-open {
+  overflow: hidden;
+}
 .slide-show {
   @media(min-width: $medium-device) {
     display: none;
@@ -540,7 +554,7 @@ footer {
     img {
       width: 100%;
       margin-bottom: 10px;
-      border-radius: 5px;
+      border-radius: 3px;
     }
     span {
       color: #ABABAB;
