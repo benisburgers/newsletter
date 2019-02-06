@@ -29,10 +29,9 @@
 		$store = strip_tags(trim($_POST["store"]));
 		$store = str_replace(array("\r", "\n"), array(" ", " "), $store);
 
-		$storeEmail = strip_tags(trim($_POST["storeEmail"]));
-		$storeEmail = str_replace(array("\r", "\n"), array(" ", " "), $storeEmail);
+		$storeEmail = $_POST["storeEmail"];
 
-		if ($storeEmail == "") {
+		if (!isset($storeEmail) || trim($storeEmail) === '') {
 			$storeEmail = "info";
 		}
 
@@ -83,7 +82,7 @@
     	email VARCHAR(50) NOT NULL UNIQUE,
     	phone INT(20) NOT NULL,
     	store VARCHAR(30) NOT NULL,
-    	storeEmail VARCHAR(50) NOT NULL,
+    	storeEmail VARCHAR(30) NOT NULL,
     	message TEXT(400) NOT NULL,
     	date_created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     	last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -114,7 +113,7 @@
 		'$email',
 		'$phone',
 		'$store',
-		'$storeEmail'
+		'$storeEmail',
 		'$message')
   	ON DUPLICATE KEY UPDATE
   		firstname='$firstname',
