@@ -146,13 +146,9 @@
 
         // Build confirm-email content.
         $email_content = "Sie haben soeben an unserem Gewinnspiel für ein einzigartiges Skierlebnis am Mittwoch, 6. März 2019, mit dem Weltmeister Patrick Küng teilgenommen.\n\n
-
 			Ob Sie gewonnen haben, erfahren Sie am 21. Februar 2019.\n\n
-
 			Viel Glück und herzliche Grüsse\n\n
-
 			Ihre Binelli Group $store\n\n
-
 			PS: Sollten Sie nicht mehr beim Gewinnspiel teilnehmen wollen, bitten wir Sie, sich frühzeitig via $storeEmail@binelli-group.ch abzumelden.\n\n";
         
         $email_content .= "Name: $firstname $lastname\n";
