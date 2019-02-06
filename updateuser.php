@@ -29,6 +29,13 @@
 		$store = strip_tags(trim($_POST["store"]));
 		$store = str_replace(array("\r", "\n"), array(" ", " "), $store);
 
+		$storeEmail = strip_tags(trim($_POST["storeEmail"]));
+		$storeEmail = str_replace(array("\r", "\n"), array(" ", " "), $storeEmail);
+
+		if ($storeEmail == "") {
+			$storeEmail = "info";
+		}
+
 	    $message = trim($_POST["message"]);
 	} else {
         // Not a POST request, set a 403 (forbidden) response code.
@@ -96,6 +103,7 @@
 		email,
 		phone,
 		store,
+		storeEmail,
 		message) VALUES (
 		'$firstname',
 		'$lastname',
@@ -105,6 +113,7 @@
 		'$email',
 		'$phone',
 		'$store',
+		'$storeEmail'
 		'$message')
   	ON DUPLICATE KEY UPDATE
   		firstname='$firstname',
@@ -114,6 +123,7 @@
   		place='$place',
   		phone='$phone',
   		store='$store',
+  		storeEmail='$storeEmail',
   		message='$message',
   		last_update=CURRENT_TIMESTAMP;";
 
@@ -132,11 +142,19 @@
         $recipient = $email;
 
         // Set the email subject.
-        $subject = "Teilnahme für Binelli Group Wettbewerb";
+        $subject = "Ihre Gewinnspielteilnahme zum Skierlebnis mit Patrick Küng am 6. März 2019";
 
         // Build confirm-email content.
-        $email_content = "Vielen Dank für die Teilnahme. Wir melden uns bei Ihnen, falls Sie Glück haben. Nachfolgend nochmals Ihre Anschrift, die wir in unserer Datenbank zur Auswertung in diesem Moment abspeichern. Die Speicherung ist nur temporär. Nach dem Wettbewerb löschen wir diese Daten wieder vollständig von unserem Server und schicken Ihnen eine Löschungsbestätigung.
-        	\n\nIhr Binelli Team\n\n";
+        $email_content = "Sie haben soeben an unserem Gewinnspiel für ein einzigartiges Skierlebnis am Mittwoch, 6. März 2019, mit dem Weltmeister Patrick Küng teilgenommen.\n\n
+
+			Ob Sie gewonnen haben, erfahren Sie am 21. Februar 2019.\n\n
+
+			Viel Glück und herzliche Grüsse\n\n
+
+			Ihre Binelli Group $store\n\n
+
+			PS: Sollten Sie nicht mehr beim Gewinnspiel teilnehmen wollen, bitten wir Sie, sich frühzeitig via $storeEmail@binelli-group.ch abzumelden.\n\n";
+        
         $email_content .= "Name: $firstname $lastname\n";
         $email_content .= "Strasse: $street\n";
         $email_content .= "PLZ: $zip\n";

@@ -8,6 +8,7 @@
   $lastname = getParamValue('lastname', $userParams);
   $email = getParamValue('email', $userParams);
   $store = getParamValue('store', $userParams);
+  $storeEmail = getParamValue('storeEmail', $userParams);
 
   // store personalized salutation
   $salutation = "";
@@ -222,6 +223,7 @@
                 <span class="small">Ich bin mit den <span class="open-modal" id="open-modal" tabindex="1">Teilnahmebedingungen</span> einverstanden</span>
               </div>
               <input class="hidden" type="text" name="store" value="<?php echo $store; ?>">
+              <input class="hidden" type="text" name="storeEmail" value="<?php echo $storeEmail; ?>">
               <div class="submit">
                 <input type="submit" value="JETZT MITMACHEN" id="ajaxButton" tabindex="1"/>
               </div>
