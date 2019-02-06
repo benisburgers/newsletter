@@ -123,24 +123,7 @@
            Ihren Abend im Winterwunderland verbringen Sie individuell, bevor Sie im <a href="https://valbellainn.ch/" target="_blank"> 4* Superior Hotel Valbella Inn</a> den erstklassigen Erlebnistag gemütlich abschliessen.
         </p>
       </section>
-      <section class="images side-margin">
-        <div class="column motta">
-          <img src="img/motta.jpg" alt="Motta Hütte">
-          <span class="strong small">Motta Hütte</span>
-          <span class="small">Copyright: Lorem Ipsum</span>
-        </div>
-        <div class="column weinkeller">
-          <img src="img/weinkeller.jpg" alt="Weinkeller">
-          <span class="strong small">Weinkeller</span>
-          <span class="small">Copyright: Lorem Ipsum</span>
-        </div>
-        <div class="column hotel">
-          <img src="img/valbella_inn.jpg" alt="Valbella Inn">
-          <span class="strong small">Valbella Inn</span>
-          <span class="small">Copyright: Lorem Ipsum</span>
-        </div>
-      </section>
-      <section class="slide-show slideshow side-margin">
+      <section class="slide-show side-margin" data-flickity='{ "watchCSS": true }'>
         <div class="gallery-cell">
           <img src="img/motta.jpg" alt="Motta Hütte">
           <span class="strong small">Motta Hütte</span>
@@ -249,7 +232,7 @@
               </p>
               <br>
               <p>
-                Die Gewinner werden am 21. Februar 2019 persönlich via Telefon und E-Mail benachrichtigt.
+                Die Gewinner werden am 21. Februar 2019 persönlich via Telefon und E&#8209;Mail benachrichtigt.
               </p>
               <br>
               <p>
