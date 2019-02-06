@@ -26,6 +26,9 @@
 	    $phone = strip_tags(trim($_POST["phone"]));
 		$phone = str_replace(array("\r", "\n"), array(" ", " "), $phone);
 
+		$store = strip_tags(trim($_POST["store"]));
+		$store = str_replace(array("\r", "\n"), array(" ", " "), $store);
+
 	    $message = trim($_POST["message"]);
 	} else {
         // Not a POST request, set a 403 (forbidden) response code.
@@ -72,6 +75,7 @@
     	place VARCHAR(30) NOT NULL,
     	email VARCHAR(50) NOT NULL UNIQUE,
     	phone INT(20) NOT NULL,
+    	store INT(30) NOT NULL,
     	message TEXT(400) NOT NULL,
     	date_created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     	last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -91,6 +95,7 @@
 		place,
 		email,
 		phone,
+		store,
 		message) VALUES (
 		'$firstname',
 		'$lastname',
@@ -99,6 +104,7 @@
 		'$place',
 		'$email',
 		'$phone',
+		'$store',
 		'$message')
   	ON DUPLICATE KEY UPDATE
   		firstname='$firstname',
@@ -107,6 +113,7 @@
   		zip='$zip',
   		place='$place',
   		phone='$phone',
+  		store='$store',
   		message='$message',
   		last_update=CURRENT_TIMESTAMP;";
 

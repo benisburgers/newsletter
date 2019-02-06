@@ -40,6 +40,11 @@ body {
   color: #000000;
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 header {
   display: flex;
   flex-wrap: wrap;

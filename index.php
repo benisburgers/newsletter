@@ -224,7 +224,7 @@
 
               <div class="input right">
                 <label for="phone">Telefonnummer*</label>
-                <input type="text" name="phone" id="phone" regex="phone" value="<?php if (isset($userParams['telefon'])) { echo $userParams['telefon'];} ?>" tabindex="1">
+                <input type="text" name="phone" id="phone" regex="phone" value="" tabindex="1">
               </div>
 
               <div class="text-area">
@@ -238,6 +238,7 @@
                 </label>
                 <span class="small">Ich bin mit den <span class="open-modal" id="open-modal" tabindex="1">Teilnahmebedingungen</span> einverstanden</span>
               </div>
+              <input class="hidden" type="text" name="store" value="<?php echo $store; ?>">
               <div class="submit">
                 <input type="submit" value="JETZT MITMACHEN" id="ajaxButton" tabindex="1"/>
               </div>

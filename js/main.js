@@ -29,7 +29,7 @@ function makeRequest(isValid) {
           }
     };
 
-    httpRequest.open("POST","updateuser.php", true);
+    httpRequest.open("POST","updateuser.php", /* async = */ true);
     httpRequest.send(new FormData(formElement));
     hideForm();
   }
