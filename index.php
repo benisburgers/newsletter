@@ -27,15 +27,17 @@
   }
 
   switch($store){
-    case 'Zürich':
+    case 'Zurich':
       $storeName = "Zürich AG | ";
       $storeStreet = "Badenerstrasse 527 | ";
       $storeTown = "CH-8040 Zürich";
+      $store = 'Zürich';
       break;
-    case 'Zürich-City':
+    case 'Zurich-City':
       $storeName = "Zürich-City AG | ";
       $storeStreet = "Pflanzschulstrasse 7-9 | ";
       $storeTown = "CH-8004 Zürich";
+      $store = 'Zürich-City';
       break;
     case 'Adliswil':
       $storeName = "Adliswil AG | ";
