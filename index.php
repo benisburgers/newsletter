@@ -28,28 +28,31 @@
 
   switch($store){
     case 'Zurich':
-      $storeName = "Zürich AG | ";
-      $storeStreet = "Badenerstrasse 527 | ";
+      $storeName = "Zürich AG";
+      $storeStreet = "Badenerstrasse 527";
       $storeTown = "CH-8040 Zürich";
       $store = 'Zürich';
       break;
     case 'Zurich-City':
-      $storeName = "Zürich-City AG | ";
-      $storeStreet = "Pflanzschulstrasse 7-9 | ";
+      $storeName = "Zürich-City AG";
+      $storeStreet = "Pflanzschulstrasse 7-9";
       $storeTown = "CH-8004 Zürich";
       $store = 'Zürich-City';
       break;
     case 'Adliswil':
-      $storeName = "Adliswil AG | ";
-      $storeStreet = "Zürichstrasse 102 | ";
+      $storeName = "Adliswil AG";
+      $storeStreet = "Zürichstrasse 102";
       $storeTown = "CH-8134 Adliswil";
       break;
     case 'Zug':
-      $storeName = "Zug AG | ";
-      $storeStreet = "Neuhofstrasse 1 | ";
+      $storeName = "Zug AG";
+      $storeStreet = "Neuhofstrasse 1";
       $storeTown = "CH-6341 Baar";
       break;
-    default: "";
+    default:
+      $storeName = "Binelli Baar AG";
+      $storeStreet = "Neuhofstrasse 1";
+      $storeTown = "CH-6341 Baar";
   }
 
   // get parameter value with key
@@ -130,17 +133,17 @@
         <div class="gallery-cell">
           <img src="img/motta.jpg" alt="Motta Hütte">
           <span class="strong small">Motta Hütte</span>
-          <span class="small">Copyright: Lorem Ipsum</span>
+          <!-- <span class="small">Copyright: Lorem Ipsum</span> -->
         </div>
         <div class="gallery-cell">
           <img src="img/weinkeller.jpg" alt="Weinkeller">
           <span class="strong small">Weinkeller</span>
-          <span class="small">Copyright: Lorem Ipsum</span>
+          <!-- <span class="small">Copyright: Lorem Ipsum</span> -->
         </div>
         <div class="gallery-cell">
           <img src="img/valbella_inn.jpg" alt="Valbella Inn">
           <span class="strong small">Valbella Inn</span>
-          <span class="small">Copyright: Lorem Ipsum</span>
+          <!-- <span class="small">Copyright: Lorem Ipsum</span> -->
         </div>
       </section>
       <section class="program side-margin">
@@ -161,7 +164,7 @@
           </div>
           <div class="time four">
             <h3>ab 17.00</h3>
-            <p>​Freies Programm, mit anschliessender Übernachtung im <a href="https://valbellainn.ch/" target="_blank"> 4* Superior Hotel Valbella Inn</a> inkl. Frühstück</p>
+            <p>​Freies Programm, anschliessend Übernachtung im <a href="https://valbellainn.ch/" target="_blank"> 4* Superior Hotel Valbella Inn</a> inkl. Frühstück</p>
           </div>
         </div>
       </section>
@@ -259,7 +262,7 @@
       </section>
     </div>
     <footer>
-      <span class="small">Binelli <?php echo $storeName; ?> <?php echo $storeStreet; ?> <?php echo $storeTown; ?></span>
+      <span class="small"><?php echo $storeName; ?> | <?php echo $storeStreet; ?> | <?php echo $storeTown; ?></span>
     </footer>
   </div>
   <div class="modal teilnahmebedingungen" id="modal">
