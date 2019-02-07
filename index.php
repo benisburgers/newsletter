@@ -21,7 +21,7 @@
       $salutation = "Sehr geehrte Frau";
       break;
     case 'Herr und Frau':
-      $salutation = "Sehr geehrte Frau und Herr";
+      $salutation = "Sehr geehrte(r) Frau und Herr";
       break;
     default: "Sehr geehrte Damen und Herren";
   }
