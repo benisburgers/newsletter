@@ -47,6 +47,12 @@ header {
     margin-bottom: 130px;
   }
 }
+header .logo a {
+  color: inherit;
+}
+header .logo a:active, header .logo a :hover {
+  color: inherit;
+}
 header .logo.left span {
   font-weight: bold;
   font-size: 21px;
@@ -192,7 +198,7 @@ input, textarea {
   }
 }
 .introduction p {
-  flex-basis: calc(33%);
+  flex-basis: 33%;
   margin: 0 0 30px;
 }
 @media (min-width: 768px) {
@@ -262,7 +268,7 @@ input, textarea {
   }
 }
 .sign-up .info {
-  flex-basis: calc(33%);
+  flex-basis: 33%;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {

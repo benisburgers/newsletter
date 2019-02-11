@@ -65,6 +65,12 @@ header {
   height: 77px;
   align-items: center;
   .logo {
+    a {
+      color: inherit;
+      &:active, :hover {
+        color: inherit;
+      }
+    }
     &.left {
       span {
         font-weight: bold;
@@ -184,7 +190,7 @@ input,textarea {
     flex-direction: row;
   }
   p {
-    flex-basis: calc(33%);
+    flex-basis: 33%;
     margin: 0 0 30px;
     @media(min-width: $medium-device) {
       margin: 0;
@@ -242,7 +248,7 @@ input,textarea {
     }
   }
   .info {
-    flex-basis: calc(33%);
+    flex-basis: 33%;
     margin-bottom: 50px;
     @media(min-width: $medium-device) {
       margin-right: $medium-margin-right;

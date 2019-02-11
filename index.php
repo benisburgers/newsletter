@@ -96,10 +96,14 @@
   <div class="screen" id="screen">
     <header>
       <div class="logo left">
-        <span>Binelli Group</span>
+        <a href="https://www.binelli-group.ch/" target="_blank">
+          <span>Binelli Group</span>
+        </a>
       </div>
       <div class="logo right">
-        <img src="img/Binelli-group_markenlogos.png" alt="binelli logos">
+        <a href="https://www.binelli-group.ch/" target="_blank">
+          <img src="img/Binelli-group_markenlogos.png" alt="binelli logos">
+        </a>
       </div>
     </header>
     <div class="main-body" id="main-body">
