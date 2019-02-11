@@ -456,14 +456,6 @@ input, textarea {
     max-height: auto;
     max-width: 100%;
   }
-  .logos .motta, .logos .hotel {
-    grid-column: 3/6;
-  }
-  .logos .pk, .logos .al {
-    grid-column: 8/11;
-  }
-}
-@media (min-width: 768px) {
   .logos .motta, .logos .hotel, .logos .pk, .logos .al {
     grid-column: span 3;
   }

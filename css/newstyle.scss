@@ -421,14 +421,6 @@ input,textarea {
         max-width: 100%;
       }
     }
-    .motta, .hotel {
-      grid-column: 3 / 6;
-    }
-    .pk, .al {
-      grid-column: 8 / 11;
-    }
-  }
-  @media(min-width: $medium-device) {
     .motta, .hotel, .pk, .al {
       grid-column: span 3;
     }
