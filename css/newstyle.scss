@@ -98,8 +98,9 @@ p {
 }
 h1 {
   font-size: 16px;
-  line-height: 20px;
+  // line-height: 20px;
   font-weight: bold;
+  margin: 0;
 }
 h2 {
   font-size: 21px;
@@ -134,7 +135,7 @@ input,textarea {
     line-height: 25px;
   }
   h1 {
-    font-size: 19px;
+    font-size: 34px;
   }
   h2 {
     font-size: 28px;
@@ -161,56 +162,15 @@ input,textarea {
     margin-right: 0;
   }
 }
-
 .start {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 30px;
-  @media(min-width: $medium-device) {
-    flex-direction: row;
-    margin-bottom: 130px;
+  h1 {
+    margin-bottom: 23px;
   }
-  .title {
-    flex-basis: calc(33%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @media(min-width: $medium-device) {
-      margin-right: $medium-margin-right;
-    }
-    @media(min-width: $large-device) {
-      margin-right: $large-margin-right;
-    }
-    h1 {
-      margin: 0 0 20px;
-    }
-    .intro-header {
-      margin: 0 0 30px;
-      font-size: 21px;
-      line-height: 26px;
-      font-weight: bold;
-      @media(min-width: $medium-device) {
-        margin: 0;
-      }
-      @media(min-width: $large-device) {
-        font-size: 34px;
-        line-height: 40px;
-      }
-    }
-  }
-  .image-container {
-    @media(min-width: $medium-device) {
-      flex-basis: calc(66% + #{$medium-margin-right});
-    }
-    @media(min-width: $large-device) {
-      flex-basis: calc(66% + #{$large-margin-right});
-    }
-    img {
-      width: 100%;
-      @media(min-width: $medium-device) {
-        border-radius: 3px;
-      }
-    }
+  p {
+  	font-size: 28px;
+    font-weight: bold;
+    line-height: 33px;
   }
 }
 .introduction {
@@ -435,20 +395,38 @@ input,textarea {
 }
 .logos {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  @media(min-width: $small-device) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media(min-width: $medium-device) {
     justify-content: space-around;
+    width: auto;
   }
   .logo {
-    height:  72px;
-    width: 72px;
+    margin-bottom: 30px;
     @media(min-width: $medium-device) {
-      height: 98px;
-      width: 98px;
+      margin-bottom: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media(min-width: $small-device) {
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
     }
     img {
-      height: 100%;
+      max-height:  72px;
+      @media(min-width: $medium-device) {
+        height: 98px;
+      }
     }
   }
 }
@@ -521,24 +499,26 @@ footer {
   overflow: hidden;
 }
 .slide-show {
-  .gallery-cell {
-    width: 253px;
-    margin-right: $medium-margin-right;
-    img {
-      width: 100%;
-      margin-bottom: 10px;
-      border-radius: 3px;
+  @media(max-width: $medium-device) {
+    .gallery-cell {
+      width: 253px;
+      margin-right: $medium-margin-right;
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 3px;
+      }
+      span {
+        color: #ABABAB;
+        display: block;
+      }
     }
-    span {
-      color: #ABABAB;
-      display: block;
+    .flickity-button {
+      display: none;
     }
-  }
-  .flickity-button {
-    display: none;
-  }
-  .flickity-page-dots {
-    display: none;
+    .flickity-page-dots {
+      display: none;
+    }
   }
 }
 
@@ -551,25 +531,51 @@ footer {
 @media (min-width: $medium-device) {
   /* disable Flickity for large devices */
   .slide-show {
-    display: flex;
-    justify-content: space-between;
     &:after {
       content: '';
-    }
-    .gallery-cell {
-      flex-basis: 33%;
-      margin-right: $medium-margin-right;
-      &:last-child {
-        margin-right: 0;
-      }
     }
   }
 }
 
-@media (min-width: $large-device) {
-  .slide-show {
-    .gallery-cell {
-      margin-right: $large-margin-right;
+.banner-container {
+  img {
+    width: 100%;
+  }
+}
+.image-grid-container {
+  overflow-x: scroll;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: $medium-margin-right;
+  min-width: $medium-device;
+  .gallery-cell {
+    // height: 242px;
+    @media(min-width: $medium-device) {
+      height: auto;
     }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .kuhn-portrait {
+    grid-column: 1 / 5;
+    grid-row: 1 / 3;
+  }
+  .motta-outside {
+    grid-column: 5 / 9;
+  }
+  .weinkeller {
+    grid-column: 9 / -1;
+  }
+  .motta-inside {
+    grid-column: 5 / -1;
+  }
+  @media(min-width: $large-device) {
+    grid-gap: $large-margin-right;
   }
 }

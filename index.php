@@ -110,15 +110,28 @@
             EINZIGARTIGES SKIERLEBNIS FÜR 4x2 PERSONEN IM WERT VON ÜBER 10’000 FRANKEN.
           </p>
         </div>
-        <div class="image-container">
-          <img src="img/kuhn-potrait.jpg" alt="Patrick Kueng">
+      </section>
+      <section class="image-grid-container side-margin">
+        <div class="image-grid">
+          <div class="kuhn-portrait gallery-cell">
+            <img src="img/grid/kuhn-portrait.png" alt="Patrick Küng">
+          </div>
+          <div class="motta-outside gallery-cell">
+            <img src="img/grid/motta-outside.png" alt="Motta Outside">
+          </div>
+          <div class="weinkeller gallery-cell">
+            <img src="img/grid/weinkeller.png" alt="Motta Wine">
+          </div>
+          <div class="motta-inside gallery-cell">
+            <img src="img/grid/motta-inside.png" alt="Motta Inside">
+          </div>
         </div>
       </section>
       <section class="introduction side-margin">
         <p class="strong">
           <?php if ($salutation && $lastname) {echo $salutation . " " . $lastname . "<br /><br />";} ?>
           Nutzen Sie die einmalige Chance auf 2 von 8 exklusiven Plätzen beim einzigartigen Binelli Group Skierlebnis in der Lenzerheide.
-          Dabei verbringen Sie gemeinsam mit dem Ex-Skirennfahrprofi und Weltmeister <a href="https://www.patrickkueng.ch/" target="_blank">Patrick Küng</a> einen unvergesslichen Tag auf der Piste.
+          Dabei verbringen Sie gemeinsam mit dem Ex-Skirennfahrprofi und Weltmeister Patrick Küng einen unvergesslichen Tag auf der Piste.
         </p>
         <p>
           Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der <a href="https://www.motta-lenzerheide.com/" target="_blank">«Motta»-Hütte</a>.
@@ -129,22 +142,22 @@
            Ihren Abend im Winterwunderland verbringen Sie individuell, bevor Sie im <a href="https://valbellainn.ch/" target="_blank"> 4* Superior Hotel Valbella Inn</a> den erstklassigen Erlebnistag gemütlich abschliessen.
         </p>
       </section>
-      <section class="slide-show side-margin" data-flickity='{ "watchCSS": true }'>
+      <!-- <section class="slide-show side-margin" data-flickity='{ "watchCSS": true }'>
         <div class="gallery-cell">
           <img src="img/motta.jpg" alt="Motta Hütte">
           <span class="strong small">Motta Hütte</span>
-          <!-- <span class="small">Copyright: Lorem Ipsum</span> -->
         </div>
         <div class="gallery-cell">
           <img src="img/weinkeller.jpg" alt="Weinkeller">
           <span class="strong small">Weinkeller</span>
-          <!-- <span class="small">Copyright: Lorem Ipsum</span> -->
         </div>
         <div class="gallery-cell">
           <img src="img/valbella_inn.jpg" alt="Valbella Inn">
           <span class="strong small">Valbella Inn</span>
-          <!-- <span class="small">Copyright: Lorem Ipsum</span> -->
         </div>
+      </section> -->
+      <section class="banner-container">
+        <img src="img/banner.png" alt="Banner">
       </section>
       <section class="program side-margin">
         <h2>Programm</h2>
@@ -156,7 +169,7 @@
           </div>
           <div class="time two">
             <h3>9.45 – 13.30</h3>
-            <p>Skifahren mit Weltmeister <a href="https://www.patrickkueng.ch/" target="_blank">Patrick Küng</a></p>
+            <p>Skifahren mit Weltmeister Patrick Küng</p>
           </div>
           <div class="time three">
             <h3>13.30 – 17.00</h3>
@@ -251,13 +264,16 @@
       </section>
       <section class="logos side-margin">
         <div class="logo motta">
-          <img src="img/motta-logo.png" alt="Motta Hütte">
-        </div>
-        <div class="logo arosa">
-          <img src="img/hotel-logo.png" alt="Arosa Lenzerheide">
+          <img src="img/motta-logo.jpg" alt="Motta Hütte">
         </div>
         <div class="logo pk">
-          <img src="img/pk-logo.png" alt="Patrick Küng">
+          <img src="img/pk-logo.jpg" alt="Patrick Küng">
+        </div>
+        <div class="logo hotel">
+          <img src="img/hotel-logo.png" alt="Arosa Lenzerheide">
+        </div>
+        <div class="logo al">
+          <img src="img/al-logo.jpg" alt="Arosa Lenzerheide">
         </div>
       </section>
     </div>
