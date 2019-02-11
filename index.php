@@ -27,13 +27,13 @@
   }
 
   switch($store){
-    case 'Zurich':
+    case 'Zürich':
       $storeName = "Zürich AG";
       $storeStreet = "Badenerstrasse 527";
       $storeTown = "CH-8040 Zürich";
       $store = 'Zürich';
       break;
-    case 'Zurich-City':
+    case 'Zürich-City':
       $storeName = "Zürich-City AG";
       $storeStreet = "Pflanzschulstrasse 7-9";
       $storeTown = "CH-8004 Zürich";
@@ -305,14 +305,13 @@
         <div class="modal-body">
           <br><br>
           <p>
-            Pro Person nur eine Teilnahme. Der Gewinn ist nicht übertragbar. Teilnahmeberechtigt sind alle Personen ab 18 Jahren mit gültigem Führerausweis der Kat. B und Wohnsitz in der Schweiz
-            oder im Fürstentum Liechtenstein. Ausgenommen sind Mitarbeitende der Binelli Group und der beauftragten Unternehmen sowie deren Angehörige. Die Gewinner werden durch das Los ermittelt und schriftlich benachrichtigt.
+            Pro Person nur eine Teilnahme. Der Gewinn ist nicht übertragbar. Teilnahmeberechtigt sind alle Personen ab 18 Jahren mit gültigem Führerausweis der Kat. B und Wohnsitz in der Schweiz
+            oder im Fürstentum Liechtenstein. Ausgenommen sind Mitarbeitende der Binelli Group und der beauftragten Unternehmen sowie deren Angehörige. Die Gewinner werden durch das Los ermittelt und schriftlich benachrichtigt.
             Die Verlosung findet unter Ausschluss der Öffentlichkeit statt. Über das Gewinnspiel und die Verlosung wird keine Korrespondenz geführt. Keine Barauszahlung des Preises. Es besteht kein Kaufzwang. Der Rechtsweg ist ausgeschlossen.
           </p>
           <br>
           <p>
-            Jeder Teilnehmer willigt mit seiner Teilnahme hiermit ausdrücklich ein, dass von ihm gemachte Bild-, Ton- und Filmaufnahmen während des Skitags am 6. März 2019 für Veröffentlichungen auf Websites, Social-Media-Plattformen und in anderen
-            Publikationen unentgeltlich genutzt werden können. Die Daten werden nicht an Dritte weitergegeben, ausgenommen davon ist die zuständige Werbeagentur.
+            Jeder Teilnehmer willigt mit seiner Teilnahme hiermit ausdrücklich ein, dass von ihm gemachte Bild-, Ton- und Filmaufnahmen während des Skitags am 6. März 2019 für Veröffentlichungen auf Websites, Social-Media-Plattformen und in anderen Publikationen unentgeltlich genutzt werden können. Die Daten werden nicht an Dritte weitergegeben, ausgenommen davon ist die zuständige Werbeagentur.
           </p>
         </div>
       </div>
