@@ -1,3 +1,4 @@
+/* autoprefixer grid: autoplace */
 @font-face {
   font-family: "BMW Type Global Pro";
   src: url("../fonts/bmwtypewebli_all.ttf") format("truetype"), url("../fonts/bmwtypewebli_all.woff") format("woff"), url("../fonts/bmwtypewebli_all.woff2") format("woff2"), url("../fonts/bmwtypewebli_all.eot") format("eot"), url("../fonts/bmwtypewebli_all.svg") format("svg");
@@ -435,34 +436,22 @@ input, textarea {
 }
 .logos .logo {
   margin-bottom: 30px;
+  max-width: 115px;
 }
 .logos .logo:last-child {
   margin-bottom: 0;
 }
 .logos .logo img {
-  max-height: 72px;
+  width: 100%;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .logos {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
-    justify-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .logos .logo {
     margin-bottom: 0;
-  }
-  .logos .logo img {
-    max-height: auto;
-    max-width: 100%;
-  }
-  .logos .motta, .logos .hotel, .logos .pk, .logos .al {
-    grid-column: span 3;
-  }
-}
-@media (min-width: 992px) {
-  .logos {
-    grid-gap: 30px;
+    max-width: 125px;
   }
 }
 
@@ -580,43 +569,52 @@ footer {
   width: 100%;
 }
 
-.image-grid-container {
-  overflow-x: scroll;
+@media (max-width: 768px) {
+  .image-grid-container {
+    overflow-x: scroll;
+  }
 }
 
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto auto;
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: row;
   min-width: 768px;
 }
-@media (min-width: 768px) {
-  .image-grid .gallery-cell {
-    height: auto;
-  }
+.image-grid .left {
+  flex-basis: 33%;
+  margin-right: 20px;
+}
+.image-grid .right {
+  flex-basis: calc(66% + 20px);
+  display: flex;
+  flex-direction: column;
+  background: red;
+  justify-content: space-between;
+}
+.image-grid .right-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.image-grid .right-top .motta-outside, .image-grid .right-top .weinkeller {
+  flex-basis: 50%;
+}
+.image-grid .right-top .motta-outside {
+  margin-right: 20px;
+}
+.image-grid .right-bottom {
+  margin-top: auto;
 }
 .image-grid img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
   display: block;
 }
-.image-grid .kuhn-portrait {
-  grid-column: 1/5;
-  grid-row: 1/3;
-}
-.image-grid .motta-outside {
-  grid-column: 5/9;
-}
-.image-grid .weinkeller {
-  grid-column: 9/-1;
-}
-.image-grid .motta-inside {
-  grid-column: 5/-1;
-}
-@media (min-width: 992px) {
-  .image-grid {
-    grid-gap: 30px;
+@media (min-width: 768px) {
+  .image-grid .left, .image-grid .motta-outside {
+    margin-right: 30px;
+  }
+  .image-grid .right {
+    flex-basis: calc(66% + 30px);
   }
 }
 

@@ -111,19 +111,27 @@
           </p>
         </div>
       </section>
-      <section class="image-grid-container side-margin">
+      <section class="image-grid-container">
         <div class="image-grid">
-          <div class="kuhn-portrait gallery-cell">
-            <img src="img/grid/kuhn-portrait.png" alt="Patrick Küng">
+          <div class="left">
+            <div class="kuhn-portrait gallery-cell">
+              <img src="img/grid/kuhn-portrait.png" alt="Patrick Küng">
+            </div>
           </div>
-          <div class="motta-outside gallery-cell">
-            <img src="img/grid/motta-outside.png" alt="Motta Outside">
-          </div>
-          <div class="weinkeller gallery-cell">
-            <img src="img/grid/weinkeller.png" alt="Motta Wine">
-          </div>
-          <div class="motta-inside gallery-cell">
-            <img src="img/grid/motta-inside.png" alt="Motta Inside">
+          <div class="right">
+            <div class="right-top">
+              <div class="motta-outside gallery-cell">
+                <img src="img/grid/motta-outside.png" alt="Motta Outside">
+              </div>
+              <div class="weinkeller gallery-cell">
+                <img src="img/grid/weinkeller.png" alt="Motta Wine">
+              </div>
+            </div>
+            <div class="right-bottom">
+              <div class="motta-inside gallery-cell">
+                <img src="img/grid/motta-inside.png" alt="Motta Inside">
+              </div>
+            </div>
           </div>
         </div>
       </section>
