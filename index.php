@@ -116,7 +116,7 @@
         </div>
       </section>
       <section class="image-grid-container">
-        <div class="image-grid">
+        <div class="image-grid side-margin">
           <div class="left">
             <div class="kuhn-portrait gallery-cell">
               <img src="img/grid/kuhn-portrait.png" alt="Patrick Küng">

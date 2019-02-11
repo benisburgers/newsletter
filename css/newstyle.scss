@@ -544,7 +544,7 @@ footer {
   }
 }
 .image-grid {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   min-width: $medium-device;
   .left {
