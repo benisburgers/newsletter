@@ -549,13 +549,14 @@ footer {
     flex-basis: calc(66% + #{$medium-margin-right});
     display: flex;
     flex-direction: column;
-    background: red;
     justify-content: space-between;
   }
   .right-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    //Fixes ie bug
+    min-height: 1px;
     .motta-outside, .weinkeller {
       flex-basis: 50%;
     }
@@ -564,18 +565,25 @@ footer {
     }
   }
   .right-bottom {
+    //Fixes ie bug
+    min-height: 1px;
     margin-top: auto;
   }
   img {
     max-width: 100%;
     display: block;
   }
-  @media(min-width: $medium-device) {
-    .left,.motta-outside {
+  @media(min-width: $large-device) {
+    .left {
       margin-right: $large-margin-right;
     }
     .right {
       flex-basis: calc(66% + #{$large-margin-right});
+    }
+    .right-top {
+      .motta-outside {
+        margin-right: $large-margin-right;
+      }
     }
   }
 }

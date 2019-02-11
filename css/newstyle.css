@@ -588,13 +588,13 @@ footer {
   flex-basis: calc(66% + 20px);
   display: flex;
   flex-direction: column;
-  background: red;
   justify-content: space-between;
 }
 .image-grid .right-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  min-height: 1px;
 }
 .image-grid .right-top .motta-outside, .image-grid .right-top .weinkeller {
   flex-basis: 50%;
@@ -603,18 +603,22 @@ footer {
   margin-right: 20px;
 }
 .image-grid .right-bottom {
+  min-height: 1px;
   margin-top: auto;
 }
 .image-grid img {
   max-width: 100%;
   display: block;
 }
-@media (min-width: 768px) {
-  .image-grid .left, .image-grid .motta-outside {
+@media (min-width: 992px) {
+  .image-grid .left {
     margin-right: 30px;
   }
   .image-grid .right {
     flex-basis: calc(66% + 30px);
+  }
+  .image-grid .right-top .motta-outside {
+    margin-right: 30px;
   }
 }
 

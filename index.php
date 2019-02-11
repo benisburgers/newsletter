@@ -177,7 +177,7 @@
           </div>
           <div class="time two">
             <h3>9.45 – 13.30</h3>
-            <p>Skifahren mit Weltmeister Patrick Küng</p>
+            <p>3 3/4h Skispass im Bündner Schneeparadies zusammen mit dem Weltmeister Patrick Küng.</p>
           </div>
           <div class="time three">
             <h3>13.30 – 17.00</h3>
