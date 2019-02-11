@@ -84,7 +84,7 @@ p {
 }
 
 h1 {
-  font-size: 16px;
+  font-size: 34px;
   font-weight: bold;
   margin: 0;
 }
@@ -171,9 +171,14 @@ input, textarea {
   margin-bottom: 23px;
 }
 .start p {
-  font-size: 28px;
+  font-size: 21px;
   font-weight: bold;
   line-height: 33px;
+}
+@media (min-width: 768px) {
+  .start p {
+    font-size: 28px;
+  }
 }
 
 .introduction {
@@ -426,46 +431,46 @@ input, textarea {
 .logos {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-}
-@media (min-width: 576px) {
-  .logos {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (min-width: 768px) {
-  .logos {
-    justify-content: space-around;
-    width: auto;
-  }
 }
 .logos .logo {
   margin-bottom: 30px;
 }
-@media (min-width: 768px) {
-  .logos .logo {
-    margin-bottom: 0;
-  }
-}
 .logos .logo:last-child {
   margin-bottom: 0;
-}
-@media (min-width: 576px) {
-  .logos .logo:nth-last-child(2) {
-    margin-bottom: 0;
-  }
 }
 .logos .logo img {
   max-height: 72px;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+  }
+  .logos .logo {
+    margin-bottom: 0;
+  }
   .logos .logo img {
-    height: 98px;
+    max-height: auto;
+    max-width: 100%;
+  }
+  .logos .motta, .logos .hotel {
+    grid-column: 3/6;
+  }
+  .logos .pk, .logos .al {
+    grid-column: 8/11;
+  }
+}
+@media (min-width: 768px) {
+  .logos .motta, .logos .hotel, .logos .pk, .logos .al {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 992px) {
+  .logos {
+    grid-gap: 30px;
   }
 }
 
