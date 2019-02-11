@@ -301,7 +301,7 @@
         <div class="modal-body">
           <br><br>
           <p>
-            Teilnahmebedingungen: Pro Person nur eine Teilnahme. Der Gewinn ist nicht übertragbar. Teilnahmeberechtigt sind alle Personen ab 18 Jahren mit gültigem Führerausweis der Kat. B und Wohnsitz in der Schweiz
+            Pro Person nur eine Teilnahme. Der Gewinn ist nicht übertragbar. Teilnahmeberechtigt sind alle Personen ab 18 Jahren mit gültigem Führerausweis der Kat. B und Wohnsitz in der Schweiz
             oder im Fürstentum Liechtenstein. Ausgenommen sind Mitarbeitende der Binelli Group und der beauftragten Unternehmen sowie deren Angehörige. Die Gewinner werden durch das Los ermittelt und schriftlich benachrichtigt.
             Die Verlosung findet unter Ausschluss der Öffentlichkeit statt. Über das Gewinnspiel und die Verlosung wird keine Korrespondenz geführt. Keine Barauszahlung des Preises. Es besteht kein Kaufzwang. Der Rechtsweg ist ausgeschlossen.
           </p>
