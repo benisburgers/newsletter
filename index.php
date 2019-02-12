@@ -140,7 +140,7 @@
         </p>
         <p>
           Doch damit nicht genug: Zur Mittagszeit wartet ein kulinarischer Höhepunkt auf Sie – und zwar in der <a href="https://www.motta-lenzerheide.com/" target="_blank">«Motta»-Hütte</a>.
-          Unser Partnerbetrieb am Sonnenhang der Lenzerheide gehört zu den zehn besten Skihütten der Schweiz.
+          Unser Partnerbetrieb am Sonnenhang der Lenzerheide gehört zu den drei besten Skihütten der Schweiz.
         </p>
         <p>
            Das Restaurant mit 14 Gault Millau Punkten serviert Ihnen am 6. März ein exquisites Alpengourmet-Menu und verwöhnt Sie mit einer Degustation edler Weine.
@@ -182,7 +182,7 @@
           </div>
           <div class="time four">
             <h3>ab 17.00</h3>
-            <p>​Freies Programm, anschliessend Übernachtung im <a href="https://valbellainn.ch/" target="_blank"> 4* Superior Hotel Valbella Inn</a> inkl. Frühstück</p>
+            <p>VIP Check-in im <a href="https://valbellainn.ch/" target="_blank">4* Superior Valbella Inn Resort</a> mit Wellness, Chillout und kleinem Tasting-Menü im Show-Restaurant »Fastatsch« – inklusive Übernachtung und Frühstück.</p>
           </div>
         </div>
       </section>
@@ -275,7 +275,7 @@
           <img src="img/pk-logo.jpg" class="pk" alt="Patrick Küng">
         </div>
         <div class="logo hotel">
-          <img src="img/hotel-logo.jpg" alt="Arosa Lenzerheide">
+          <img src="img/hotel-logo.jpg" alt="Hotel Valbella Inn">
         </div>
         <div class="logo al">
           <img src="img/al-logo.jpg" alt="Arosa Lenzerheide">

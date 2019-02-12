@@ -444,6 +444,9 @@ input, textarea {
   margin-bottom: 30px;
   height: 50px;
 }
+.logos .logo.al {
+  height: 60px;
+}
 .logos .logo:last-child {
   margin-bottom: 0;
 }
