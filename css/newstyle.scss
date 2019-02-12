@@ -466,7 +466,7 @@ footer {
     }
     border-radius: 3px;
     height: auto;
-    overflow: scroll;
+    overflow-y: scroll;
     max-width: $medium-device;
   }
   .modal-header {
