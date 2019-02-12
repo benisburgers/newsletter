@@ -51,7 +51,7 @@
   // get parameter value with key
   function getParamValue($key, $userParams) {
     if (isset($userParams[$key])) {
-      return $userParams[$key]; 
+      return $userParams[$key];
     } else {
       return "";
     }
@@ -269,13 +269,13 @@
       </section>
       <section class="logos side-margin">
         <div class="logo motta">
-          <img src="img/motta-logo.jpg" alt="Motta Hütte">
+          <img src="img/motta-logo.jpg" class="motta" alt="Motta Hütte">
         </div>
         <div class="logo pk">
-          <img src="img/pk-logo.jpg" alt="Patrick Küng">
+          <img src="img/pk-logo.jpg" class="pk" alt="Patrick Küng">
         </div>
         <div class="logo hotel">
-          <img src="img/hotel-logo.png" alt="Arosa Lenzerheide">
+          <img src="img/hotel-logo.jpg" alt="Arosa Lenzerheide">
         </div>
         <div class="logo al">
           <img src="img/al-logo.jpg" alt="Arosa Lenzerheide">
