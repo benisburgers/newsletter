@@ -156,7 +156,7 @@
         $email_content .= "Bemerkung:\n$message\n";
 
         // Build the email headers.
-        $email_headers = "From: $recipient";
+        $email_headers = "From: info@binelligroup-erleben.ch";
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
