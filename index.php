@@ -51,7 +51,7 @@
   // get parameter value with key
   function getParamValue($key, $userParams) {
     if (isset($userParams[$key])) {
-      return $userParams[$key];
+      return $userParams[$key]; 
     } else {
       return "";
     }
