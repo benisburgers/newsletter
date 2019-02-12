@@ -170,7 +170,7 @@
         <div class="times">
           <div class="time one">
             <h3>9.00</h3>
-            <p>​Kaffee und Gipfeli an der <a href="https://arosalenzerheide.swiss/de/Region/Infrastruktur/Talstation-Heimberg_isd_126855" target="_blank">Talstation Heimberg</a> in Parpan (individuelle Hinreise)</p>
+            <p>​Kaffee und Gipfeli an der <a href="https://arosalenzerheide.swiss/de/Region/Infrastruktur/Talstation-Heimberg_isd_126855" target="_blank">Talstation Heimberg</a> in Parpan (individuelle Hinreise).</p>
           </div>
           <div class="time two">
             <h3>9.45 – 13.30</h3>
@@ -178,7 +178,7 @@
           </div>
           <div class="time three">
             <h3>13.30 – 17.00</h3>
-            <p>​Gaumenschmaus in der <a href="https://www.motta-lenzerheide.com/" target="_blank">«Motta»-Hütte</a> und Degustation erlesener Weine</p>
+            <p>​Gaumenschmaus in der <a href="https://www.motta-lenzerheide.com/" target="_blank">«Motta»-Hütte</a> und Degustation erlesener Weine.</p>
           </div>
           <div class="time four">
             <h3>ab 17.00</h3>
