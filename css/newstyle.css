@@ -536,42 +536,9 @@ footer {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .slide-show .gallery-cell {
-    width: 253px;
-    margin-right: 20px;
-  }
-  .slide-show .gallery-cell img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 3px;
-  }
-  .slide-show .gallery-cell span {
-    color: #ABABAB;
-    display: block;
-  }
-  .slide-show .flickity-button {
-    display: none;
-  }
-  .slide-show .flickity-page-dots {
-    display: none;
-  }
-}
-
-/* flickity on by default */
-.slide-show:after {
-  content: "flickity";
-  display: none;
-}
-
-@media (min-width: 768px) {
-  /* disable Flickity for large devices */
-  .slide-show:after {
-    content: "";
-  }
-}
 .banner-container img {
   width: 100%;
+  border-radius: 3px;
 }
 
 @media (max-width: 768px) {
@@ -601,10 +568,10 @@ footer {
   justify-content: space-between;
   min-height: 1px;
 }
-.image-grid .right-top .motta-outside, .image-grid .right-top .weinkeller {
+.image-grid .right-top .hotel, .image-grid .right-top .weinkeller {
   flex-basis: 50%;
 }
-.image-grid .right-top .motta-outside {
+.image-grid .right-top .hotel {
   margin-right: 20px;
 }
 .image-grid .right-bottom {
@@ -614,6 +581,7 @@ footer {
 .image-grid img {
   max-width: 100%;
   display: block;
+  border-radius: 3px;
 }
 @media (min-width: 992px) {
   .image-grid .left {
@@ -622,7 +590,7 @@ footer {
   .image-grid .right {
     flex-basis: calc(66% + 30px);
   }
-  .image-grid .right-top .motta-outside {
+  .image-grid .right-top .hotel {
     margin-right: 30px;
   }
 }

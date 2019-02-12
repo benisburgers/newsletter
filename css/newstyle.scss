@@ -493,48 +493,11 @@ footer {
 .modal-open {
   overflow: hidden;
 }
-.slide-show {
-  @media(max-width: $medium-device) {
-    .gallery-cell {
-      width: 253px;
-      margin-right: $medium-margin-right;
-      img {
-        width: 100%;
-        margin-bottom: 10px;
-        border-radius: 3px;
-      }
-      span {
-        color: #ABABAB;
-        display: block;
-      }
-    }
-    .flickity-button {
-      display: none;
-    }
-    .flickity-page-dots {
-      display: none;
-    }
-  }
-}
-
-/* flickity on by default */
-.slide-show:after {
-  content: 'flickity';
-  display: none;
-}
-
-@media (min-width: $medium-device) {
-  /* disable Flickity for large devices */
-  .slide-show {
-    &:after {
-      content: '';
-    }
-  }
-}
 
 .banner-container {
   img {
     width: 100%;
+    border-radius: 3px;
   }
 }
 .image-grid-container {
@@ -562,10 +525,10 @@ footer {
     justify-content: space-between;
     //Fixes ie bug
     min-height: 1px;
-    .motta-outside, .weinkeller {
+    .hotel, .weinkeller {
       flex-basis: 50%;
     }
-    .motta-outside {
+    .hotel {
       margin-right: $medium-margin-right;
     }
   }
@@ -577,6 +540,7 @@ footer {
   img {
     max-width: 100%;
     display: block;
+    border-radius: 3px;
   }
   @media(min-width: $large-device) {
     .left {
@@ -586,7 +550,7 @@ footer {
       flex-basis: calc(66% + #{$large-margin-right});
     }
     .right-top {
-      .motta-outside {
+      .hotel {
         margin-right: $large-margin-right;
       }
     }

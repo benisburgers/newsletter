@@ -112,21 +112,21 @@
         <div class="image-grid side-margin">
           <div class="left">
             <div class="kuhn-portrait gallery-cell">
-              <img src="img/grid/kuhn-portrait.png" alt="Patrick Küng">
+              <img src="img/grid/portrait.jpg" alt="Patrick Küng">
             </div>
           </div>
           <div class="right">
             <div class="right-top">
-              <div class="motta-outside gallery-cell">
-                <img src="img/grid/motta-outside.png" alt="Motta Outside">
+              <div class="hotel gallery-cell">
+                <img src="img/grid/hotel.jpg" alt="Motta Outside">
               </div>
               <div class="weinkeller gallery-cell">
-                <img src="img/grid/weinkeller.png" alt="Motta Wine">
+                <img src="img/grid/weinkeller.jpg" alt="Motta Wine">
               </div>
             </div>
             <div class="right-bottom">
               <div class="motta-inside gallery-cell">
-                <img src="img/grid/motta-inside.png" alt="Motta Inside">
+                <img src="img/grid/motta.jpg" alt="Motta Inside">
               </div>
             </div>
           </div>
