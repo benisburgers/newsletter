@@ -27,32 +27,25 @@
   }
 
   switch($store){
-    case 'Zürich':
-      $storeName = "Zürich AG";
-      $storeStreet = "Badenerstrasse 527";
-      $storeTown = "CH-8040 Zürich";
-      $store = 'Zürich';
-      break;
     case 'Zürich-City':
-      $storeName = "Zürich-City AG";
+      $storeName = "Binelli Zürich-City AG";
       $storeStreet = "Pflanzschulstrasse 7-9";
       $storeTown = "CH-8004 Zürich";
-      $store = 'Zürich-City';
       break;
     case 'Adliswil':
-      $storeName = "Adliswil AG";
+      $storeName = "Binelli Adliswil AG";
       $storeStreet = "Zürichstrasse 102";
       $storeTown = "CH-8134 Adliswil";
       break;
     case 'Zug':
-      $storeName = "Zug AG";
+      $storeName = "Binelli Baar AG";
       $storeStreet = "Neuhofstrasse 1";
       $storeTown = "CH-6341 Baar";
       break;
     default:
-      $storeName = "Binelli Baar AG";
-      $storeStreet = "Neuhofstrasse 1";
-      $storeTown = "CH-6341 Baar";
+      $storeName = "Binelli Zürich AG";
+      $storeStreet = "Badenerstrasse 527";
+      $storeTown = "CH-8040 Zürich";
   }
 
   // get parameter value with key
